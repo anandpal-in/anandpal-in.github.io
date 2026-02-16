@@ -3,37 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothing to see here...</title>
-    <style>
-        body {
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Intentionally "fun" fonts */
-            text-align: center;
-        }
-        .emoji {
-            font-size: 8rem;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        h2 { font-size: 2.5rem; color: #333; max-width: 800px; padding: 0 20px; }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    <title>About - Dr. Anand Pal</title>
+    <meta name="description" content="Learn about Dr. Anand Pal's journey, research philosophy, and commitment to scientific education">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Dr. Anand Pal</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="voice.html">Voice</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- SWAP EMOJI AND TEXT HERE -->
-    <div class="emoji">🙃</div>
-    <h2>  Powered by coffee☕, curiosity, and unfinished ideas.</br>
-		A better version is coming soon — do visit again!</h2>
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About Me</h1>
+        <p>A journey through physics, education, and the ideas shaping tomorrow’s world.</p>
+    </section>
 
-</body>
-</html>
+    <!-- Biography Section -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
+                <div>
+                    <img src="Profile.jpg" alt="Dr. Anand Pal" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px var(--shadow);">
+                </div>
+                <div>
+                    <!--h2 style="margin-bottom: 1.5rem;">Biography</h2>-->
+                    <p>I am a quantum physicist, educator, and institutional strategist dedicated to the idea that the future will be defined not just by what we discover, but by the quality of our public reasoning and the strength of the institutions we build to guide it. While my technical research centers on quantum technologies and advanced energy systems, my broader interest explores how emerging technologies intersect with economic structures, ethical discourse, and global power dynamics.</p>
+                    
+                    <p>Education, for me, is not a peripheral activity but a deeply personal commitment. In my view, education is the core infrastructure of civilization, the foundation upon which societies build their intellectual, economic, and moral capacities. Having grown up in rural India, where opportunity was neither assumed nor guaranteed but earned, I experienced directly how access to education can transform an individual’s life trajectory. This experience continues to shape my dedication to developing institutional systems that expand opportunity at scale.
+                    I am committed to strengthening higher education systems, fostering rational and critical inquiry, and cultivating human
+                    capital capable of navigating rapid technological change with intellectual clarity and ethical responsibility. In my
+                    view, universities are not merely transmitters of knowledge; they are strategic engines of societal progress. I work
+                    toward building global academic ecosystems that are resilient, collaborative, and future-oriented.</p>
+                    
+                    <p>As science and technology continue to accelerate, the fundamental challenge before humanity is not only what we can
+                    create, but what we should create, and how we prepare societies to manage that responsibility. My long-term vision is to
+                    contribute to global conversations on responsible technological progress, institutional reform, and the cultivation of
+                    informed, thoughtful, and socially conscious minds.</p>
+                    <p> I believe that the true frontier of science lies not only in discovery, but in the educational systems, collaborative structures, and public reasoning that enable knowledge to serve humanity.</p>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 2rem; margin-top: 4rem;">Academic Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Associate Professor</h3>
+                        <p>Leading research in quantum technologies and emerging materials. Established international collaborations and secured multiple research grants.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Director - International Collaborations</h3>
+                        <p>Established and currently lead the International Relations Office to advance the institute’s global vision, designing strategic international partnerships, dual-degree pathways, and mobility ecosystems that enhance research impact,
+                        academic capacity, and institutional positioning.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Professor</h3>
+                        <p>Developed new courses in quantum physics and materials science. Built research group focused on functional materials and energy systems.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2014 - 2021</div>
+                    <div class="timeline-content">
+                        <h3>Postdoctoral Research Fellow</h3>
+                        <p>Conducted advanced research in quantum materials and superconductivity at IISc (India) and Simon Fraser University, Canada, with experimental work carried out at leading international facilities including TRIUMF (Canada), Paul
+                        Scherrer Institut (Switzerland), and ISIS Neutron and Muon Source (UK).</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2008 - 2013</div>
+                    <div class="timeline-content">
+                        <h3>Ph.D. in Physics</h3>
+                        <p>Doctoral research focused on quantum phenomena in novel material systems. Published groundbreaking work in peer-reviewed journals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); padding: 3rem; border-radius: 8px; text-align: center; margin-top: 4rem; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">Looking Forward</h3>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 900px; margin: 0 auto;">As we enter an era shaped by disruptive technologies, in which intelligent systems are increasingly capable of autonomous decision-making, I seek to contribute to advancing scientific knowledge and strengthening the institutions that guide its application. My focus extends beyond deepening our understanding of the physical world to building educational and research ecosystems capable of navigating rapid technological change with responsibility and foresight.</p>
+
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto;">Through research, teaching, and public engagement, I aim to create a future in which scientific innovation aligns with
+                human development, institutional resilience, ethical governance, and sustainable progress for the common good.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Anand Pal</h3>
+                    <p>Associate Professor of Physics<br>
+                        Specializing in Quantum Technologies <br>
+                        & Global Higher Education<br>
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                                </svg>
+                                <strong>Google Scholar</strong>
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://orcid.org/0000-0003-1602-507X" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#A6CE39">
+                                    <path
+                                        d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.568c.646 0 1.179-.533 1.179-1.179s-.533-1.179-1.179-1.179-1.179.533-1.179 1.179.533 1.179 1.179 1.179zm.577 9.157H6.19V9.932h1.756v7.793zm9.859 0h-4.279v-4.279c0-1.022.019-2.336-1.425-2.336-1.425 0-1.644 1.113-1.644 2.262v4.353h-4.279V9.932h4.107v1.066h.058c.572-1.084 1.97-2.229 4.055-2.229 4.338 0 5.137 2.855 5.137 6.567v2.389z" />
+                                </svg>
+                                <strong>ORCID:</strong> 0000-0003-1602-507X
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0;">
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#E9711C">
+                                    <path
+                                        d="M24 19.059l-4.94-16.059h-3.642l4.94 16.059h3.642zm-13.938-16.059l-4.94 16.059h3.642l4.94-16.059h-3.642zm-7.703 0l-2.359 7.669 2.359 8.39h3.642l-4.94-16.059h-3.642z" />
+                                </svg>
+                                <strong>Scopus ID:</strong> 25226051000
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research & Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="students.html">Join Our Group</a></li>
+                        <li><a href="voice.html">Voice & Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pal-anand/" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/anandpal" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/sandhuanand/" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:anand.pal@manipal.edu" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Anand Pal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
+    
+    </html>
