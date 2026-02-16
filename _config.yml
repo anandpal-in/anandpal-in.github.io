@@ -1,0 +1,11 @@
+# Jekyll Configuration for Clean URLs
+permalink: pretty
+
+# This makes URLs work without .html:
+# /about.html becomes /about/
+# /research.html becomes /research/
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - IMPLEMENTATION_GUIDE.md
