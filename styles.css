@@ -12,8 +12,10 @@
     --shadow: rgba(0, 0, 0, 0.08);
     --shadow-lg: rgba(0, 0, 0, 0.15);
     
-    --font-display: 'Crimson Text', serif;
-    --font-body: 'Lora', serif;
+    --font-display: 'Playfair Display', serif;
+	--font-body: 'Inter', sans-serif;
+
+
     
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -48,15 +50,20 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    line-height: 1.3;
+    line-height: 1.25;
     font-weight: 600;
     color: var(--primary);
+	letter-spacing: 0.5px;
+    margin-bottom: 0.6em;
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-h2 { font-size: clamp(2rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: 1.5rem; }
+h1 { font-size: clamp(2.8rem, 5vw, 4rem); }
+h2 { font-size: clamp(2.2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+
 
 p {
     margin-bottom: 1rem;
@@ -734,6 +741,15 @@ a:hover {
     padding: var(--spacing-lg) var(--spacing-md);
 }
 
+/* Biography Grid */
+.biography-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
 /* Form Styles */
 .form-group {
     margin-bottom: 1.5rem;
@@ -1287,6 +1303,10 @@ textarea {
     .blog-grid,
     .partnership-grid,
     .community-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .biography-grid {
         grid-template-columns: 1fr;
     }
     
