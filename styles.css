@@ -744,7 +744,7 @@ a:hover {
 /* Chrome-specific optimization for better margin */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .content-section {
-        padding-top: 8rem;
+        padding-top: 12rem;
     }
 }
 
