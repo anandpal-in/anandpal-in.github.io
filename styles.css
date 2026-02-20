@@ -738,7 +738,7 @@ a:hover {
 
 /* Content Section */
 .content-section {
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 6rem var(--spacing-md);
 }
 
 /* Biography Grid */
