@@ -738,7 +738,14 @@ a:hover {
 
 /* Content Section */
 .content-section {
-    padding: 8rem var(--spacing-md);
+    padding: 6rem var(--spacing-md);
+}
+
+/* Chrome-specific optimization for better margin */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .content-section {
+        padding-top: 8rem;
+    }
 }
 
 /* Biography Grid */
