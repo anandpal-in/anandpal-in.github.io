@@ -3,38 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothing to see here...</title>
-    <style>
-        body {
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Intentionally "fun" fonts */
-            text-align: center;
-        }
-        .emoji {
-            font-size: 8rem;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        h2 { font-size: 2.5rem; color: #333; max-width: 800px; padding: 0 20px; }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    <title>Contact - Dr. Anand Pal</title>
+    <meta name="description" content="Get in touch with Dr. Anand Pal for research collaboration, consulting, speaking engagements, and international partnerships">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <script src="script.js"></script>
 <body>
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Dr. Anand Pal</a>
+            <button class="mobile-toggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="voice.html">Voice</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- SWAP EMOJI AND TEXT HERE -->
-    <div class="emoji">📩</div>
-    <h2> Communication channel open......</h2>
+    <section class="content-section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto 4rem;">
+                
+                <!-- Collaboration Opportunities -->
+                <h2 id="collaboration" style="margin-bottom: 2rem; text-align: center;">Ways to Work Together</h2>
+                <div class="card-grid" style="margin-bottom: 5rem;">
+                    <div class="card">
+                        <h3>🔬 Research Collaboration</h3>
+                        <p>I welcome collaboration with faculty, researchers, and industry partners working in quantum materials, advanced energy
+                        systems, and emerging technologies.</p>
+                        <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-light);">
+                            <li>Joint research projects</li>
+                            <li>Collaborative grant proposals</li>
+                            <li>Industry–academic partnerships</li>
+                            <li>Interdisciplinary research initiatives</li>
+                        </ul>
+                    </div>
 
-</body>
-</html>
+                    <div class="card">
+                        <h3>🎓 Student & Research Opportunities</h3>
+                        <p>Opportunities are available for motivated students and early-career researchers interested in quantum materials and
+                        sustainable technologies.</p>
+                        <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-light);">
+                            <li>PhD and postdoctoral positions</li>
+                            <li>Visiting researchers</li>
+                            <li>Undergraduate research projects</li>
+                            <li>Co-supervision with partner institutions</li>
+                        </ul>
+                    </div>
 
+                    <div class="card">
+                        <h3>🎤 Talk and Public Dialogue</h3>
+                        <p>I engage in conversations on science, technology, and institutional development, contributing to thoughtful discourse on
+                        emerging innovation and societal transformation.</p>
+                        <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-light);">
+                            <li>Keynote addresses and invited lectures</li>
+                            <li>Science, policy, and education forums</li>
+                            <li>Strategic academic dialogues</li>
+                            <li>Public conversations on technology and society</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Consulting Section (keeping this as requested earlier) -->
+                <section id="consulting" style="padding: 3rem 0; border-top: 3px solid var(--border);">
+                    <h2 style="margin-bottom: 1rem; text-align: center;">Advisory & Strategic Engagement</h2>
+                    <p style="max-width: 800px; margin: 0 auto 3rem; text-align: center; font-size: 1.1rem; color: var(--text-light);">
+                        I engage selectively with industry, universities, and research institutions on scientific direction, institutional
+                        transformation, and long-term innovation strategy.
+                    </p>
+
+                    <div class="consulting-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                        <div style="padding: 2rem; background: white; border-radius: 4px; border: 2px solid var(--border); box-shadow: 0 4px 15px var(--shadow);">
+                            <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem;">🔬 Technical & Innovation Advisory</h3>
+                            <ul style="margin-left: 1.5rem; color: var(--text-light); line-height: 1.8;">
+                                <li>Advanced materials performance assessment</li>
+                                <li>Sustainability assessment for materials development</li>
+                                <li>Research commercialization and technology transfer strategy</li>
+                                <li>Experimental–computational integration strategy</li>
+                            </ul>
+                        </div>
+
+                        <div style="padding: 2rem; background: white; border-radius: 4px; border: 2px solid var(--border); box-shadow: 0 4px 15px var(--shadow);">
+                            <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem;">🏢 Institutional Excellence Strategy</h3>
+                            <ul style="margin-left: 1.5rem; color: var(--text-light); line-height: 1.8;">
+                                <li> Curriculum transformation for emerging technologies</li>
+                                <li> Research workforce alignment with innovation ecosystems</li>
+                                <li>Global benchmarking and performance optimization</li>
+                                <li>Design of high-impact research and innovation ecosystems</li>
+                            </ul>
+                        </div>
+
+                        <div style="padding: 2rem; background: white; border-radius: 4px; border: 2px solid var(--border); box-shadow: 0 4px 15px var(--shadow);">
+                            <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem;">🌍 Transnational Academic Strategy</h3>
+                            <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--text-light); line-height: 1.8;">
+                                <li>Transnational academic partnership development</li>
+                                <li> Global mobility framework & implementation</li>
+                                <li> Structuring cross-border research alliances</li>
+                                <li> Technology sovereignty and regulatory compliance</li>
+                            </ul>
+                        </div>
+
+                        <div style="padding: 2rem; background: white; border-radius: 4px; border: 2px solid var(--border); box-shadow: 0 4px 15px var(--shadow);">
+                            <h3 style="color: var(--secondary); margin-bottom: 1rem; font-size: 1.4rem;">🏛️ Leadership, Governance & Policy</h3>
+                            <ul style="margin-left: 1.5rem; color: var(--text-light); line-height: 1.8;">
+                                <li>Design of high-performance, human-centered institutional systems </li>
+                                <li>Structural diagnostics for organizational inefficiencies</li>
+                                <li>Education policy and regulatory strategy</li>
+                                <li>Science and technology policy and implementation strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; padding: 2rem; background: var(--background-alt); border-radius: 4px; margin-bottom: 3rem;">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--secondary);">Industry & Institutional Engagement</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-light); line-height: 1.8;"> • Quantum technology and advanced materials enterprises • Semiconductor and sustainable energy companies •
+                            Research-driven startups and deep-tech ventures • Universities and global research institutions • Science and technology
+                            policy think tanks • Technology transfer and innovation strategy offices
+                        </p>
+                    </div>
+
+                    <!-- Strategic Advisory moved into Connect With Me to avoid repetition -->
+                </section>
+
+                <!-- Connect With Me Section -->
+                <div style="text-align: center; padding: 3rem 2rem; background: linear-gradient(135deg, var(--background-alt) 0%, white 100%); border-radius: 12px; border: 2px solid var(--border); box-shadow: 0 10px 40px rgba(0,0,0,0.08);">
+                    
+                    <h2 style="margin-bottom: 1.25rem; color: var(--secondary); font-size: 2.2rem;">Connect & Collaborate</h2>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.05rem; color: var(--text-light); line-height: 1.6; max-width: 700px; margin-left: auto; margin-right: auto;">
+                        For collaboration, consulting, speaking, or advisory requests — email a brief summary and I will respond.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                        <a href="https://www.linkedin.com/in/pal-anand/" target="_blank" aria-label="LinkedIn" style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 1.5rem; background: white; border-radius: 12px; border: 2px solid #0A66C2; transition: all 0.3s ease; text-decoration: none; color: inherit;" onmouseover="this.style.backgroundColor='#0A66C2'; this.style.color='white'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(10,102,194,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='inherit'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <strong>LinkedIn</strong>
+                        </a>
+                        <a href="https://x.com/anandpal" target="_blank" aria-label="Twitter" style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 1.5rem; background: white; border-radius: 12px; border: 2px solid #000000; transition: all 0.3s ease; text-decoration: none; color: inherit;" onmouseover="this.style.backgroundColor='#000000'; this.style.color='white'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='inherit'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="#000000"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <strong>Twitter/X</strong>
+                        </a>
+                        <a href="https://www.facebook.com/sandhuanand/" target="_blank" aria-label="Facebook" style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 1.5rem; background: white; border-radius: 12px; border: 2px solid #1877F2; transition: all 0.3s ease; text-decoration: none; color: inherit;" onmouseover="this.style.backgroundColor='#1877F2'; this.style.color='white'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(24,119,242,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='inherit'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            <strong>Facebook</strong>
+                        </a>
+                        <a href="mailto:anand.pal@manipal.edu" aria-label="Email" style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; padding: 1.5rem; background: white; border-radius: 12px; border: 2px solid #EA4335; transition: all 0.3s ease; text-decoration: none; color: inherit;" onmouseover="this.style.backgroundColor='#EA4335'; this.style.color='white'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(234,67,53,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='inherit'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="#EA4335"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            <strong>Email</strong>
+                        </a>
+                    </div>
+                    
+                    <!-- Academic Links -->
+                    <div style="padding: 2rem; background: white; border-radius: 8px; margin-bottom: 0;">
+                        <p style="font-weight: 600; margin-bottom: 1.5rem; color: var(--secondary);">Academic Profiles</p>
+                        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                            <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 1.5rem; background: white; border-radius: 8px; border: 2px solid #4285F4; text-decoration: none; color: var(--text-light); transition: all 0.3s ease; font-weight: 500;" onmouseover="this.style.backgroundColor='#4285F4'; this.style.color='white'; this.style.boxShadow='0 8px 20px rgba(66,133,244,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='var(--text-light)'; this.style.boxShadow='none';">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#4285F4"><g><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></g></svg>
+                                <strong>Google Scholar</strong>
+                            </a>
+                            <a href="https://orcid.org/0000-0003-1602-507X" target="_blank" style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 1.5rem; background: white; border-radius: 8px; border: 2px solid #A6CE39; text-decoration: none; color: var(--text-light); transition: all 0.3s ease; font-weight: 500;" onmouseover="this.style.backgroundColor='#A6CE39'; this.style.color='white'; this.style.boxShadow='0 8px 20px rgba(166,206,57,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='var(--text-light)'; this.style.boxShadow='none';">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#A6CE39"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.568c.646 0 1.179-.533 1.179-1.179s-.533-1.179-1.179-1.179-1.179.533-1.179 1.179.533 1.179 1.179 1.179zm.577 9.157H6.19V9.932h1.756v7.793zm9.859 0h-4.279v-4.279c0-1.022.019-2.336-1.425-2.336-1.425 0-1.644 1.113-1.644 2.262v4.353h-4.279V9.932h4.107v1.066h.058c.572-1.084 1.97-2.229 4.055-2.229 4.338 0 5.137 2.855 5.137 6.567v2.389z"/></svg>
+                                <strong>ORCID</strong>
+                            </a>
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank" style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 1.5rem; background: white; border-radius: 8px; border: 2px solid #E9711C; text-decoration: none; color: var(--text-light); transition: all 0.3s ease; font-weight: 500;" onmouseover="this.style.backgroundColor='#E9711C'; this.style.color='white'; this.style.boxShadow='0 8px 20px rgba(233,113,28,0.3)';" onmouseout="this.style.backgroundColor='white'; this.style.color='var(--text-light)'; this.style.boxShadow='none';">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#E9711C"><path d="M24 19.059l-4.94-16.059h-3.642l4.94 16.059h3.642zm-13.938-16.059l-4.94 16.059h3.642l4.94-16.059h-3.642zm-7.703 0l-2.359 7.669 2.359 8.39h3.642l-4.94-16.059h-3.642z"/></svg>
+                                <strong>Scopus</strong>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Anand Pal</h3>
+                    <p>Associate Professor of Physics<br>
+                        Specializing in Quantum Technologies <br>
+                        & Global Higher Education<br>
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                                </svg>
+                                <strong>Google Scholar</strong>
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://orcid.org/0000-0003-1602-507X" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#A6CE39">
+                                    <path
+                                        d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.568c.646 0 1.179-.533 1.179-1.179s-.533-1.179-1.179-1.179-1.179.533-1.179 1.179.533 1.179 1.179 1.179zm.577 9.157H6.19V9.932h1.756v7.793zm9.859 0h-4.279v-4.279c0-1.022.019-2.336-1.425-2.336-1.425 0-1.644 1.113-1.644 2.262v4.353h-4.279V9.932h4.107v1.066h.058c.572-1.084 1.97-2.229 4.055-2.229 4.338 0 5.137 2.855 5.137 6.567v2.389z" />
+                                </svg>
+                                <strong>ORCID:</strong> 0000-0003-1602-507X
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0;">
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#E9711C">
+                                    <path
+                                        d="M24 19.059l-4.94-16.059h-3.642l4.94 16.059h3.642zm-13.938-16.059l-4.94 16.059h3.642l4.94-16.059h-3.642zm-7.703 0l-2.359 7.669 2.359 8.39h3.642l-4.94-16.059h-3.642z" />
+                                </svg>
+                                <strong>Scopus ID:</strong> 25226051000
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research & Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="students.html">Join Our Group</a></li>
+                        <li><a href="voice.html">Voice & Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pal-anand/" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/anandpal" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/sandhuanand/" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:anand.pal@manipal.edu" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Anand Pal. All rights reserved. | Last updated: <span id="last-updated">February 2026</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    </body>
+    
+    </html>
