@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
+        // Mobile dropdown toggle
+        const dropdowns = document.querySelectorAll('.dropdown > a');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const parent = this.parentElement;
+                    parent.classList.toggle('active');
+                }
+            });
+        });
+        
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
             const isClickInsideNav = navMenu.contains(event.target);
@@ -111,3 +123,16 @@ document.querySelectorAll('img').forEach(img => {
         this.classList.add('loaded');
     });
 });
+
+// Auto-update "Last updated" date
+document.addEventListener('DOMContentLoaded', function() {
+    const lastUpdatedElement = document.getElementById('last-updated');
+    if (lastUpdatedElement) {
+        const now = new Date();
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                       'July', 'August', 'September', 'October', 'November', 'December'];
+        const monthYear = months[now.getMonth()] + ' ' + now.getFullYear();
+        lastUpdatedElement.textContent = monthYear;
+    }
+});
+

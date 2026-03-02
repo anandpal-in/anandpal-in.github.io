@@ -3,40 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothing to see here...</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Inter', sans-serif;
-            text-align: center;
-        }
-        .emoji {
-            font-size: 8rem;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        h2 { font-size: 2.5rem; color: #333; max-width: 800px; padding: 0 20px; }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    <title>Research & Teaching - Dr. Anand Pal</title>
+    <meta name="description" content="Explore Dr. Anand Pal's research in quantum technologies, advanced materials, and emerging physics">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <script src="script.js"></script>
 <body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Dr. Anand Pal</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="research.html" class="active">Research & Teaching</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="Thought.html">Thought Leadership</a></li>
+                <li><a href="Mentorship.html">Mentorship</a></li>
+                <li><a href="contact.html">Connect & Collaborate</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Header
+    <section class="page-header">
+        <h1>Research</h1>
+        <p>Advancing the frontiers of quantum physics and emerging technologies</p>
+    </section>
+    -->
 
-    <!-- SWAP EMOJI AND TEXT HERE -->
-    <div class="emoji">⏳ </div>
-    <h2>Research loading.......Great discoveries cannot be rushed.</h2>
+    <section class="content-section">
+        <div class="container">
+            <h2 style="margin-bottom: 2rem;">Research Overview</h2>
+            <p style="font-size: 1.1rem; text-align: justify;">My research explores the fundamental interactions that lead to emergent phenomena in quantum materials, particularly in
+            the context of sustainable energy applications. I am interested in both the design and experimental investigation of
+            novel quantum systems, using advanced characterization techniques. Increasingly, I integrate computational and
+            data-driven approaches to accelerate materials discovery and deepen physical insight.</p>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 3rem; text-align: justify;">Beyond laboratory research, I engage with the history of science and the public understanding of scientific knowledge. I
+            am also interested in how emerging technologies influence economic systems, institutional structures, and ethical
+            frameworks.</p>
 
+          <!-- Research Areas-->
+            <h3 style="margin-bottom: 1.5rem; color: var(--secondary);">Research Areas</h3>
+            <div class="research-areas">
+                <div class="research-area-card">
+                    <div class="area-icon">⚛️</div>
+                    <h3>Quantum & Emerging Technologies</h3>
+                    <p>Exploring quantum and emerging technologies to design and optimize next-generation materials that enable a
+                        sustainable technological future.</p>
+                </div>
+                <div class="research-area-card">
+                    <div class="area-icon">🔬</div>
+                    <h3>Advanced Materials</h3>
+                    <p>Designing functional materials, with advanced characterization expertise in muon spin spectroscopy at TRIUMF,
+                        PSI, and RAL, to investigate their behavior under extreme conditions, including high pressure, ultra-high
+                        magnetic fields, and sub-millikelvin temperatures.</p>
+                </div>
+                <div class="research-area-card">
+                    <div class="area-icon">🏛️ </div>
+                    <h3>Science, Technology & Governance</h3>
+                    <p>Studying how scientific breakthroughs and emerging technologies reshape societies by influencing governance
+                        systems, economic structures, ethical discourse, and global power dynamics.</p>
+                </div>
+                <div class="research-area-card">
+                    <div class="area-icon">🎓</div>
+                    <h3>Higher Education & Human Capital Development</h3>
+                    <p>Exploring how higher education can evolve beyond knowledge transmission to become a strategic engine for
+                        critical inquiry and human capacity in an era of rapid technological change.</p>
+                </div>
+            </div>
+
+            <!-- ═══ STUDENTS ═══ -->
+            <section id="students" class="scholarship-section">
+                <h2 class="section-heading"><span>👥</span> Research Group</h2>            
+                <h3 style="margin-bottom: 1.5rem; color: var(--secondary);">Current PhD Students</h3>
+                <div class="students-grid">
+                    <div class="student-card">
+                        <span class="student-type type-phd">PhD Candidate</span>
+                        <h3>Asha Bhandarkar</h3>
+                        <p style="color: var(--secondary); font-weight: 500; margin-bottom: 0.5rem;">Since Feb 2024</p>
+                        <p><strong>Research:</strong> Sustainable Energy Materials</p>
+                        <p><strong>Background:</strong> M.Sc. Physics, MAHE, Manipal, Karnataka</p>
+                    </div>
+                    <div class="student-card">
+                        <span class="student-type type-phd">PhD Candidate</span>
+                        <h3><a href="https://www.linkedin.com/in/anusha-t-t-798174308/" target="_blank">Anusha TT</a></h3>
+                        <p style="color: var(--secondary); font-weight: 500; margin-bottom: 0.5rem;">Since Feb 2025</p>
+                        <p><strong>Research:</strong> Multivalent Battery Materials</p>
+                        <p><strong>Background:</strong> M.Sc. Computational Chemistry, CUP, Bathinda, Punjab</p>
+                    </div>
+                    <!--
+                                <div class="student-card">
+                                    <span class="student-type type-phd">PhD Candidate (Co-Guide)</span>
+                                    <h3>Asha</h3>
+                                    <p>Transition Element and Rare Earth Doped Oxide Phosphor for NIR-LED Applications</p>
+                                    <p class="student-since">Since August 2024</p>
+                                </div>
+                                -->
+                </div>
+            
+                <h3 style="margin: 2.5rem 0 1.5rem; color: var(--secondary);">Undergraduate Researchers</h3>
+                <div class="students-grid">
+                    <div class="student-card">
+                        <span class="student-type type-ug">UG Researcher</span>
+                        <h3><a href="https://www.linkedin.com/in/johan-s-daniel/" target="_blank">Johan S. Denial</a></h3>
+                        <p style="color: var(--secondary); font-weight: 500; margin-bottom: 0.5rem;">Since November 2023</p>
+                        <p><strong>Research:</strong> Vulnerabilities and comprehension abilities of LLMs</p>
+                        <p><strong>Background:</strong> B.Tech. MIT Bengaluru</p>
+                    </div>
+                    <div class="student-card">
+                        <span class="student-type type-ug">UG Researcher</span>
+                        <h3><a href="https://www.linkedin.com/in/aniruddh-pooli/" target="_blank">Aniruddh Pooli</a></h3>
+                        <p style="color: var(--secondary); font-weight: 500; margin-bottom: 0.5rem;">Since May 2025</p>
+                        <p><strong>Research:</strong> Data-driven design of energy materials</p>
+                        <p><strong>Background:</strong> B.Tech. MIT Bengaluru</p>
+                    </div>
+                </div>
+
+                <!-- Open Research Problems-->
+                <h3 style="margin-bottom: 2rem; margin-top: 4rem;">Open Research Projects</h3>
+                <div style="background: var(--background-alt); padding: 2rem; border-radius: 8px; margin-bottom: 4rem;">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <!-- <div class="timeline-date">2024 - 2027</div> -->
+                            <div class="timeline-content">
+                                <h4>Coming soon</h4>
+                                <!-- <p><strong>Title:</strong> "Quantum Error Correction in Topological Qubits"<br> -->
+                                    <!-- <strong>Amount:</strong> $500,000<br> -->
+                                    <!-- <strong>Role:</strong> Principal Investigator -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="join-group-cta">
+                    <h3>Join the Research Group</h3>
+                    <p>I welcome motivated students interested in quantum materials, green energy, and computational physics. PhD
+                        and undergraduate research positions available.</p>
+                    <a href="contact.html" class="btn-primary"
+                        style="background: white; color: var(--secondary); border-color: white;">Get in Touch →</a>
+                </div>
+            </section>
+            
+            <!-- Section for Later Use -->
+            <!-- <h2 style="margin-bottom: 2rem; margin-top: 4rem;">Current Research Grants</h2>
+            <div style="background: var(--background-alt); padding: 2rem; border-radius: 8px; margin-bottom: 4rem;">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2027</div>
+                        <div class="timeline-content">
+                            <h3>National Science Foundation Grant</h3>
+                            <p><strong>Title:</strong> "Quantum Error Correction in Topological Qubits"<br>
+                            <strong>Amount:</strong> $500,000<br>
+                            <strong>Role:</strong> Principal Investigator</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2026</div>
+                        <div class="timeline-content">
+                            <h3>Department of Energy Research Grant</h3>
+                            <p><strong>Title:</strong> "Advanced Materials for Next-Generation Energy Storage"<br>
+                            <strong>Amount:</strong> $350,000<br>
+                            <strong>Role:</strong> Principal Investigator</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>International Collaboration Grant</h3>
+                            <p><strong>Title:</strong> "Global Quantum Computing Research Network"<br>
+                            <strong>Amount:</strong> $200,000<br>
+                            <strong>Role:</strong> Co-Principal Investigator</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <h2 style="margin-bottom: 2rem;">Research Facilities & Equipment</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                <div style="padding: 1.5rem; background: white; border: 1px solid var(--border); border-radius: 8px;">
+                    <h4 style="margin-bottom: 0.5rem;">Quantum Lab</h4>
+                    <p>Dilution refrigerators, superconducting qubit fabrication, quantum measurement systems</p>
+                </div>
+                <div style="padding: 1.5rem; background: white; border: 1px solid var(--border); border-radius: 8px;">
+                    <h4 style="margin-bottom: 0.5rem;">Materials Characterization</h4>
+                    <p>AFM, SEM, XRD, Raman spectroscopy, optical microscopy</p>
+                </div>
+                <div style="padding: 1.5rem; background: white; border: 1px solid var(--border); border-radius: 8px;">
+                    <h4 style="margin-bottom: 0.5rem;">Computational Resources</h4>
+                    <p>High-performance computing cluster, quantum simulation software</p>
+                </div>
+                <div style="padding: 1.5rem; background: white; border: 1px solid var(--border); border-radius: 8px;">
+                    <h4 style="margin-bottom: 0.5rem;">Energy Testing</h4>
+                    <p>Battery testing systems, electrochemical workstations, thermal analysis</p>
+                </div>
+            </div> -->
+
+            <!-- <div style="background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); padding: 3rem; border-radius: 8px; text-align: center; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">Interested in Collaboration?</h3>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto 1.5rem;">I welcome opportunities to collaborate with researchers, industry partners, and institutions worldwide. Let's explore how we can work together.</p>
+                <a href="contact.html#collaboration" class="btn-primary" style="background: white; color: var(--secondary);">Explore Opportunities</a>
+            </div> -->
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Anand Pal</h3>
+                    <p>Associate Professor of Physics<br>
+                        Specializing in Quantum Technologies <br>
+                        & Global Higher Education<br>
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
+                                </svg>
+                                <strong>Google Scholar</strong>
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0.5rem;">
+                            <a href="https://orcid.org/0000-0003-1602-507X" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#A6CE39">
+                                    <path
+                                        d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 8.568c.646 0 1.179-.533 1.179-1.179s-.533-1.179-1.179-1.179-1.179.533-1.179 1.179.533 1.179 1.179 1.179zm.577 9.157H6.19V9.932h1.756v7.793zm9.859 0h-4.279v-4.279c0-1.022.019-2.336-1.425-2.336-1.425 0-1.644 1.113-1.644 2.262v4.353h-4.279V9.932h4.107v1.066h.058c.572-1.084 1.97-2.229 4.055-2.229 4.338 0 5.137 2.855 5.137 6.567v2.389z" />
+                                </svg>
+                                <strong>ORCID:</strong> 0000-0003-1602-507X
+                            </a>
+                        </p>
+                        <p style="margin-bottom: 0;">
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="#E9711C">
+                                    <path
+                                        d="M24 19.059l-4.94-16.059h-3.642l4.94 16.059h3.642zm-13.938-16.059l-4.94 16.059h3.642l4.94-16.059h-3.642zm-7.703 0l-2.359 7.669 2.359 8.39h3.642l-4.94-16.059h-3.642z" />
+                                </svg>
+                                <strong>Scopus ID:</strong> 25226051000
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="research.html">Research & Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="Mentorship.html">Join Our Group</a></li>
+                        <li><a href="Thought.html">Voice & Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pal-anand/" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/anandpal" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/sandhuanand/" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:anand.pal@manipal.edu" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Anand Pal. All rights reserved. | Last updated: <span id="last-updated">February
+                        2026</span></p>
+            </div>
+        </div>
+    </footer>
+    
+<script src="script.js"></script>
+    
 </body>
+    
 </html>
-
-

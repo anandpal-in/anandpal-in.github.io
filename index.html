@@ -6,7 +6,7 @@
     <title>Dr. Anand Pal | Quantum Materials Researcher & Global Academic Leader</title>
     <meta name="description" content="Dr. Anand Pal - Associate Professor, Quantum Materials Researcher, and International Academic Leader at Manipal Institute of Technology">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <script src="script.js"></script>
 <body>
@@ -20,13 +20,19 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="/index" class="active">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/research">Research</a></li>
-                <li><a href="/teaching">Teaching</a></li>
-                <li><a href="/students">Students</a></li>
-                <li><a href="/voice">Voice</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="research.html">Research & Teaching</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="Thought.html">Thought Leadership</a></li>
+                <li><a href="Mentorship.html">Mentorship</a></li>
+                <li><a href="contact.html">Connect & Collaborate</a></li>
             </ul>
         </div>
     </nav>
@@ -217,7 +223,7 @@
                     </ul>
                 </div>
                 <div class="leadership-card">
-                    <h3>👥 Community service and Mentorship</h3>
+                    <h3>👥<a href="Mentorship.html#Community-service-Mentorship">Community service and Mentorship</a></h3>
                     <p>Leading multiple student organizations and initiatives</p>
                     <ul style="margin-top: 1rem; text-align: left;">
                         <li>President, NDLI MITBLR Club</li>
@@ -290,8 +296,8 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="research.html">Research & Publications</a></li>
                         <li><a href="teaching.html">Teaching</a></li>
-                        <li><a href="students.html">Join Our Group</a></li>
-                        <li><a href="voice.html">Voice & Impact</a></li>
+                        <li><a href="Mentorship.html">Join Our Group</a></li>
+                        <li><a href="Thought.html">Voice & Impact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -313,7 +319,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Dr. Anand Pal. All rights reserved.</p>
+                <p>&copy; 2026 Dr. Anand Pal. All rights reserved. | Last updated: <span id="last-updated">February 2026</span></p>
             </div>
         </div>
     </footer>

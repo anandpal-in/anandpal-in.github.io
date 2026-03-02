@@ -6,7 +6,7 @@
     <title>About - Dr. Anand Pal</title>
     <meta name="description" content="Learn about Dr. Anand Pal's journey, research philosophy, and commitment to scientific education">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <script src="script.js"></script>
 <body>
@@ -20,12 +20,19 @@
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="/index" >Home</a></li>
-                <li><a href="/research">Research</a></li>
-                <li><a href="/teaching">Teaching</a></li>
-                <li><a href="/students">Students</a></li>
-                <li><a href="/voice">Voice</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li class="dropdown">
+                    <a href="research.html">Research & Teaching</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                    </ul>
+                </li>
+                <li><a href="Thought.html">Thought Leadership</a></li>
+                <li><a href="Mentorship.html">Mentorship</a></li>
+                <li><a href="contact.html">Connect & Collaborate</a></li>
             </ul>
         </div>
     </nav>
@@ -167,8 +174,8 @@
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="research.html">Research & Publications</a></li>
                         <li><a href="teaching.html">Teaching</a></li>
-                        <li><a href="students.html">Join Our Group</a></li>
-                        <li><a href="voice.html">Voice & Impact</a></li>
+                        <li><a href="Mentorship.html">Join Our Group</a></li>
+                        <li><a href="Thought.html">Voice & Impact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -203,7 +210,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Dr. Anand Pal. All rights reserved.</p>
+                <p>&copy; 2026 Dr. Anand Pal. All rights reserved. | Last updated: <span id="last-updated">February 2026</span></p>
             </div>
         </div>
     </footer>
