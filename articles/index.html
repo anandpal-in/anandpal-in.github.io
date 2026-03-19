@@ -1,0 +1,122 @@
+---
+layout: default
+title: Articles & Essays
+description: Explore Dr. Anand Pal's articles on quantum physics, science policy, education, and research insights
+---
+
+<section class="page-header">
+    <h1>Articles &amp; Essays</h1>
+    <p>Insights on quantum physics, science policy, and the future of research</p>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <div class="archive-wrap">
+
+            <div class="archive-filter">
+                <button class="filter-btn active" data-filter="all">All Articles</button>
+                <button class="filter-btn" data-filter="research-insights">Research Insights</button>
+                <button class="filter-btn" data-filter="science-policy">Science Policy</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="technology">Technology &amp; Society</button>
+                <button class="filter-btn" data-filter="reflections">Reflections</button>
+            </div>
+
+            <div class="archive-list" id="archiveList">
+
+                <article class="archive-item" data-category="science-policy">
+                    <div class="archive-content">
+                        <h3>The Global Science Race</h3>
+                        <div class="archive-meta">
+                            <span class="archive-date">📅 February 2026</span>
+                            <span class="archive-category">Science Policy</span>
+                        </div>
+                        <p>A reflection on how China became a world knowledge power engine, pushing behind the US and other Western countries, and what Indian universities can learn from it.</p>
+                        <div class="archive-footer">
+                            <span class="read-time">⏱️ 8 min read</span>
+                            <a href="/articles/The-Global-Science-Race/" class="read-link">Read Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="archive-item" data-category="research-insights">
+                    <div class="archive-content">
+                        <h3>The Pseudogap Mystery in High-Temperature Superconductors</h3>
+                        <div class="archive-meta">
+                            <span class="archive-date">📅 Coming Soon</span>
+                            <span class="archive-category">Research Insights</span>
+                        </div>
+                        <p>Exploring one of the most intriguing unsolved problems in condensed matter physics. A deep dive into the pseudogap phenomenon and its implications for understanding superconductivity.</p>
+                        <div class="archive-footer">
+                            <span class="read-time">⏱️ 8 min read</span>
+                            <span class="coming-soon-label">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="archive-item" data-category="education">
+                    <div class="archive-content">
+                        <h3>Teaching Quantum Computing to Engineering Students</h3>
+                        <div class="archive-meta">
+                            <span class="archive-date">📅 Coming Soon</span>
+                            <span class="archive-category">Education</span>
+                        </div>
+                        <p>Reflections on making quantum concepts accessible without sacrificing rigor. Strategies for integrating quantum computing into engineering curricula and preparing students for the quantum era.</p>
+                        <div class="archive-footer">
+                            <span class="read-time">⏱️ 7 min read</span>
+                            <span class="coming-soon-label">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="archive-item" data-category="technology">
+                    <div class="archive-content">
+                        <h3>Quantum Technologies and Global Power Dynamics</h3>
+                        <div class="archive-meta">
+                            <span class="archive-date">📅 Coming Soon</span>
+                            <span class="archive-category">Technology &amp; Society</span>
+                        </div>
+                        <p>How emerging quantum technologies are reshaping geopolitical landscapes and what this means for international research collaboration and scientific independence.</p>
+                        <div class="archive-footer">
+                            <span class="read-time">⏱️ 12 min read</span>
+                            <span class="coming-soon-label">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="archive-item" data-category="reflections">
+                    <div class="archive-content">
+                        <h3>On the Role of Universities in a Rapidly Changing World</h3>
+                        <div class="archive-meta">
+                            <span class="archive-date">📅 Coming Soon</span>
+                            <span class="archive-category">Reflections</span>
+                        </div>
+                        <p>Thoughts on how universities can remain relevant and transformative institutions in the face of technological disruption, economic uncertainty, and shifting societal needs.</p>
+                        <div class="archive-footer">
+                            <span class="read-time">⏱️ 9 min read</span>
+                            <span class="coming-soon-label">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="/thought/" class="btn-outline">← Back to Ideas, Learning &amp; Dialogue</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.archive-item').forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+    });
+});
+</script>
