@@ -1,0 +1,23 @@
+<nav class="nav-container">
+    <div class="nav-content">
+        <a href="/" class="logo">Dr. Anand Pal</a>
+        <button class="mobile-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+            <li><a href="/about/" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
+            <li class="dropdown">
+                <a href="/research/" {% if page.url contains 'research' or page.url contains 'publications' or page.url contains 'teaching' %}class="active"{% endif %}>Research &amp; Teaching</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/publications/">Publications</a></li>
+                    <li><a href="/teaching/">Teaching</a></li>
+                </ul>
+            </li>
+            <li><a href="/thought/" {% if page.url contains 'thought' %}class="active"{% endif %}>Insights &amp; Perspectives</a></li>
+            <li><a href="/leadership-development/" {% if page.url contains 'leadership' %}class="active"{% endif %}>Leadership Development</a></li>
+            <li><a href="/contact/" {% if page.url contains 'contact' %}class="active"{% endif %}>Connect &amp; Collaborate</a></li>
+        </ul>
+    </div>
+</nav>
