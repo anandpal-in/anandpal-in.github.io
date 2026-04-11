@@ -7,9 +7,9 @@
        Single teal-blue accent used for: stat numbers, active nav,
        link hovers, primary CTA, focus rings, section labels.
        Change --accent-500 and everything cascades. */
-    --accent:        #0E6BA8;   /* primary accent */
-    --accent-light:  #E6F4FB;   /* tint — hover bg, icon backgrounds */
-    --accent-dark:   #094E7A;   /* pressed / darker hover */
+    --accent:        #d4a574;   /* primary accent */
+    --accent-light:  #f9efe4;   /* tint — hover bg, icon backgrounds */
+    --accent-dark:   #b8864a;   /* pressed / darker hover */
 
     --text: #2c2c2c;
     --text-light: #5a5a5a;
