@@ -342,8 +342,9 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background: var(--accent-light);
-    color: var(--accent-dark);
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
     transform: translateY(-2px);
 }
 
