@@ -216,7 +216,6 @@ a:hover {
 }
 
 /* Hero Section */
-/* Fix 2 — Hero hierarchy: dominant H1 → muted tagline → secondary details */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -1498,6 +1497,10 @@ textarea {
         grid-template-columns: 1fr;
         text-align: center;
     }
+	
+	.hero-image {
+    order: -1;
+	}
     
     .hero-cta {
         justify-content: center;
@@ -1546,11 +1549,7 @@ textarea {
         align-self: flex-start;
     }
 
-    /* ── Mobile Nav Spacing Fix ──
-       Fixed navbar is ~64px tall on mobile. All inner pages
-       (About, Research & Teaching, Insights, Leadership, Contact)
-       need enough top padding so content clears the navbar.
-       Adjust --nav-height-mobile in :root if you change nav height. */
+    /* ── Mobile Nav Spacing Fix ── */
 
     .page-header {
         padding-top: calc(var(--nav-height-mobile) + 2.5rem);
