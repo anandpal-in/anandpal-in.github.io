@@ -2683,7 +2683,7 @@ textarea {
 
 .mentee-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -2735,7 +2735,7 @@ textarea {
 
 /* Card body */
 .mentee-body {
-    padding: 1rem 1.25rem 1.25rem;
+    padding: 1.25rem 1.75rem 1.75rem;
     display: flex;
     flex-direction: column;
     flex: 1;
