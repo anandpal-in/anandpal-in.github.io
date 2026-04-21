@@ -1,5 +1,6 @@
-# Dr. Anand Pal — Academic Website
-**Live at:** https://anandpal.in/
+# Dr. Anand Pal
+**Live at:** https://anandpal.in
+
 
 ## Folder Structure
 ```
