@@ -1,12 +1,5 @@
 # Dr. Anand Pal — Academic Website
-**Live at:** https://anandpal-in.github.io
-
-Built with Jekyll, hosted on GitHub Pages. No build tools needed — GitHub builds it automatically.
-
-## Upload Steps
-1. Delete all old `.html` files from your GitHub repo
-2. Upload everything from this zip (keep the folder structure)
-3. GitHub Pages rebuilds automatically in ~2 minutes
+**Live at:** https://anandpal.in/
 
 ## Folder Structure
 ```
@@ -30,15 +23,3 @@ Built with Jekyll, hosted on GitHub Pages. No build tools needed — GitHub buil
 ├── contact/index.html       → anandpal-in.github.io/contact/
 └── 404.html
 ```
-
-## Images to Upload
-Put these in `assets/images/`:
-- `Profile.jpg` — your profile photo
-- `brainrace.webp` — book cover
-- `archit.jpg` — mentee photo (or any other mentee photos)
-
-## Things to Update
-- `_includes/footer.html` — replace `mailto:anand@example.com` with your real email
-- `leadership-development/index.html` — replace `RAJ-KUMAR-USERNAME` with real LinkedIn usernames
-- `publications/index.html` — replace `YOUR_ID` in Google Scholar links
-- `assets/images/` — add your actual photo files
