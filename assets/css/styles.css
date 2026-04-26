@@ -2383,6 +2383,7 @@ textarea {
 
 /* ── Pull Quote (Large Centered Quote) ── */
 .article-content .pullquote  {
+    display: block;
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
@@ -2849,6 +2850,7 @@ textarea {
     }
 
     .pullquote {
+        display: block;
         font-size: 1.2rem;
         padding: 1.5rem 1rem;
     }
