@@ -24,7 +24,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
 
             <div class="archive-list" id="archiveList">
 
-                <article class="archive-item" data-category="science-policy">
+                <article class="pub-item" data-category="science-policy">
                     <div class="archive-content">
                         <h3>The Global Science Race</h3>
                         <div class="archive-meta">
@@ -40,7 +40,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
                 </article>
 
 
-                <article class="archive-item" data-category="research-insights">
+                <article class="pub-item" data-category="research-insights">
                     <div class="archive-content">
                         <h3>The Fear of Falling Behind</h3>
                         <div class="archive-meta">
@@ -55,7 +55,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
                     </div>
                 </article>
 
-                <article class="archive-item" data-category="research-insights">
+                <article class="pub-item" data-category="research-insights">
                     <div class="archive-content">
                         <h3>The Pseudogap Mystery in High-Temperature Superconductors</h3>
                         <div class="archive-meta">
@@ -70,7 +70,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
                     </div>
                 </article>
 
-                <article class="archive-item" data-category="education">
+                <article class="pub-item" data-category="education">
                     <div class="archive-content">
                         <h3>Teaching Quantum Computing to Engineering Students</h3>
                         <div class="archive-meta">
@@ -85,7 +85,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
                     </div>
                 </article>
 
-                <article class="archive-item" data-category="technology">
+                <article class="pub-item" data-category="technology">
                     <div class="archive-content">
                         <h3>Quantum Technologies and Global Power Dynamics</h3>
                         <div class="archive-meta">
@@ -100,7 +100,7 @@ description: Explore Dr. Anand Pal's articles on quantum physics, science policy
                     </div>
                 </article>
 
-                <article class="archive-item" data-category="reflections">
+                <article class="pub-item" data-category="reflections">
                     <div class="archive-content">
                         <h3>On the Role of Universities in a Rapidly Changing World</h3>
                         <div class="archive-meta">
@@ -130,7 +130,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         this.classList.add('active');
         const filter = this.dataset.filter;
-        document.querySelectorAll('.archive-item').forEach(item => {
+        document.querySelectorAll('.pub-item').forEach(item => {
             item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
         });
     });
