@@ -1462,13 +1462,14 @@ textarea {
     margin-top: 1rem;
 }
 
-    padding: 0.6rem 1.5rem;
+.filter-btn {
+    padding: 0.8rem 1.8rem;
     background: white;
     border: 2px solid var(--border);
     border-radius: 25px;
     cursor: pointer;
     transition: var(--transition);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-family: var(--font-body);
     font-weight: 500;
     color: var(--text);
