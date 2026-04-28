@@ -1401,6 +1401,22 @@ textarea {
     justify-content: center;
 }
 
+.archive-wrap {
+    margin-top: -1.5rem;
+}
+
+.archive-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+}
+
+.archive-list {
+    margin-top: 0.5rem;
+}
+
 .filter-btn {
     padding: 0.6rem 1.5rem;
     background: white;
