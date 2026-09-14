@@ -1,0 +1,80 @@
+---
+layout: default
+title: Writing by Dr. Anand Pal
+description: Explore Dr. Anand Pal's articles on quantum physics, science policy, education, and research insights
+---
+
+<section class="page-header">
+    <!-- <h1>Writing</h1> -->
+    <h3>“A word after a word after a word is power.”
+    — Margaret Atwood
+    </h3>
+        <!-- <div class="container"> -->
+                <p style="margin: 0 0 1.5rem; max-width: 100%;">
+                    Welcome to my personal writing archive of ideas, questions,
+                    and reflections that I choose to share publicly. I write about science
+                    and emerging technologies, research and higher education, science policy,
+                    and the role of universities in society. I also write about learning,
+                    leadership, intellectual curiosity, and the experiences that shape how
+                    we think and work.
+                </p>
+    
+                <p style="max-width: 100%; margin: 0;">
+                    These pieces are not intended to provide definitive answers. They are
+                    part of an ongoing effort to understand complex questions, examine
+                    assumptions, and make sense of a rapidly changing world.
+                </p>
+            <!-- </div> -->
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <div class="archive-wrap">
+
+            <div class="archive-filter">
+                <button class="filter-btn active" data-filter="all">All Articles</button>
+                <button class="filter-btn" data-filter="research-insights">Research Insights</button>
+                <button class="filter-btn" data-filter="science-policy">Science Policy</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="technology">Technology &amp; Society</button>
+                <button class="filter-btn" data-filter="reflections">Reflections</button>
+            </div>
+
+            <div class="archive-list" id="archiveList">
+                {% for item in site.data.articles %}
+                    <a href="{{ item.url | default: '#' }}" class="pub-item-link {% if item.status != 'published' %}pub-item-link-disabled{% endif %}" data-category="{{ item.filter_category }}">
+                        <article class="pub-item">
+                            <div class="archive-content">
+                                <h3>{{ item.title }}</h3>
+                                <div class="archive-meta">
+                                    <span class="archive-date">📅 {{ item.display_date }}</span>
+                                    <span class="archive-category">{{ item.category }}</span>
+                                </div>
+                                <p>{{ item.excerpt }}</p>
+                                <div class="archive-footer">
+                                    <span class="read-time">⏱️ {{ item.read_time }}</span>
+                                    {% if item.status != 'published' %}
+                                        <span class="coming-soon-label">Coming Soon</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.pub-item-link').forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+    });
+});
+</script>
