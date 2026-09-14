@@ -1,0 +1,127 @@
+---
+layout: default
+title: Reading & Ideas
+description: Books and articles that have shaped my thinking about science, education, technology, and society
+---
+
+<section class="page-header">
+        <h3>
+            “If I have seen further, it is by standing on the shoulders of giants.”
+            — Isaac Newton
+        </h3>
+
+        <p style="margin: 0 0 1.5rem; max-width: 100%;">
+            Reading is one of the most effective ways to understand the world around us. It broadens our horizons, challenges
+            our assumptions, and creates the space to learn, think, and develop new ideas. I read on science, education,
+            technology, and their wider impact on society. And in my free time I do write down reviews, ideas and observations
+            here that help me make sense of the world around me.
+        </p>
+        <p style="margin: 0 0 1.5rem; max-width: 100%;">
+            In an age of constant news and digital noise, reading offers an opportunity to reflect, question, and engage more thoughtfully with important ideas.
+        </p>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <div class="archive-wrap">
+
+            <div class="archive-filter">
+                <button class="filter-btn active" data-filter="all">All Books</button>
+                <button class="filter-btn" data-filter="science-policy">Science &amp; Policy</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+                <button class="filter-btn" data-filter="philosophy">Philosophy &amp; Ideas</button>
+                <button class="filter-btn" data-filter="quantum-physics">Quantum Physics</button>
+                <button class="filter-btn" data-filter="currently-reading">Currently Reading</button>
+            </div>
+
+            <div class="books-list" id="booksList">
+                {% for item in site.data.books %}
+                    <article class="book-card-full" data-category="{{ item.filter_category }}">
+                        <div class="book-cover-thumb">
+                            {% if item.image %}
+                                <img src="{{ item.image }}" alt="{{ item.title }} cover">
+                            {% else %}
+                                <div class="book-cover-placeholder-icon">📚</div>
+                            {% endif %}
+                        </div>
+                        <div class="book-card-content">
+                            <h3>{{ item.title }}</h3>
+                            <p class="book-author-name">by {{ item.author }}</p>
+                            <div class="book-card-meta">
+                                {% if item.status == 'currently-reading' %}
+                                    <span class="book-status-badge">Currently Reading</span>
+                                {% endif %}
+                                <span class="archive-category">{{ item.category }}</span>
+                            </div>
+                            <p>{{ item.excerpt }}</p>
+                            <div class="archive-footer">
+                                {% if item.note %}
+                                    <span class="coming-soon-label">{{ item.note }}</span>
+                                {% elsif item.status == 'coming-soon' %}
+                                    <span class="coming-soon-label">Coming Soon</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+
+            <div class="wish-list-section">
+                <h3>Reading Wish List</h3>
+                <p class="wish-list-intro">
+                    Books I hope to read as part of my continuing intellectual exploration.
+                </p>
+            </div>
+
+            <div class="wish-item" data-category="finance">
+                <div class="wish-icon">📚</div>
+                <h4>The Intelligent Investor</h4>
+                <p class="wish-author">by Benjamin Graham</p>
+                <p class="wish-category">Finance &amp; Investing</p>
+                <p class="wish-description">
+                    A foundational work on disciplined, long-term investing.
+                </p>
+            </div>
+
+            <div class="wish-list-grid">
+                <div class="wish-item">
+                    <div class="wish-icon">📚</div>
+                    <h4>The Quantum Challenge</h4>
+                    <p class="wish-author">by George Greenstein</p>
+                    <p class="wish-description">Exploring the philosophical implications of quantum mechanics</p>
+                </div>
+                <div class="wish-item">
+                    <div class="wish-icon">🎓</div>
+                    <h4>Universities and the Future of America</h4>
+                    <p class="wish-author">by Derek Bok</p>
+                    <p class="wish-description">Understanding the evolving role of higher education</p>
+                </div>
+                <div class="wish-item">
+                    <div class="wish-icon">💡</div>
+                    <h4>The Innovators</h4>
+                    <p class="wish-author">by Walter Isaacson</p>
+                    <p class="wish-description">The story of the people who created the digital revolution</p>
+                </div>
+                <div class="wish-item">
+                    <div class="wish-icon">🏛️</div>
+                    <h4>The Fifth Age of the University</h4>
+                    <p class="wish-author">by James Axtell</p>
+                    <p class="wish-description">Reflections on the future of academic institutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.book-card-full').forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
+    });
+});
+</script>

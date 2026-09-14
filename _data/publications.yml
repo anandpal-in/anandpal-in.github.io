@@ -1,0 +1,78 @@
+- title: "Design principles and engineering approaches for high-performance thermoelectric materials"
+  authors: "S A Bhandarkar, Ashok Rao, Anand Pal"
+  journal: "Energy Reports, 16, 109718 (2026)"
+  doi: "https://doi.org/10.1016/j.egyr.2026.109718"
+  categories: ["thermoelectric", "quantum-materials"]
+
+
+- title: "A dimensionally consistent size–strain plot method for crystallite size and microstrain estimation"
+  authors: "Anand Pal"
+  journal: "Journal of Alloys and Compounds, 1048, 185324 (2025)"
+  doi: "https://doi.org/10.1016/j.jallcom.2025.185324"
+  categories: ["xray", "quantum-materials"]
+
+- title: "Tuning optical and thermoelectric properties of LaCoO3: Partial substitution of La by isovalent Gd"
+  authors: "U. Deepika Shanubhogue, Anand Pal, Ashok Rao, Saikat Chattopadhyay, Anuradha M. Ashok, Nithya Davis"
+  journal: "Journal of Alloys and Compounds, 941 (2023)"
+  doi: "https://doi.org/10.1016/j.jallcom.2023.168987"
+  categories: ["thermoelectric", "xray"]
+
+- title: "Tuning the semimetallic charge transport in the Weyl semimetal candidate Eu2Ir2O7(111) epitaxial thin film with an all-in-all-out spin structure"
+  authors: "Mithun Ghosh, Shwetha G. Bhat, Anand Pal, P. S. Anil Kumar"
+  journal: "Journal of Physics: Condensed Matter, 34 (2022)"
+  doi: "https://doi.org/10.1088/1361-648X/ac50da"
+  categories: ["quantum-materials"]
+
+- title: "Investigation of cationic disorder effects on the transport and magnetic properties of perovskite Pr0.7-xRExSr0.3MnO3 (RE = Nd, Sm, Gd)"
+  authors: "Anand Pal, Ashok Rao, Dhananjaya Kekuda, B. S. Nagaraja, Rittwick Mondal, Dipankar Biswas"
+  journal: "Journal of Magnetism and Magnetic Materials, 512 (2020)"
+  doi: "https://doi.org/10.1016/j.jmmm.2020.167011"
+  categories: ["quantum-materials", "thermoelectric"]
+
+- title: "Magnetic field induced effects in the quasikagome Kondo lattice system CePtPb"
+  authors: "A. C. Y. Fang, S. R. Dunsiger, Anand Pal, K. Akintola, J. E. Sonier, E. Mun"
+  journal: "Physical Review B, 100 (2019)"
+  doi: "https://doi.org/10.1103/PhysRevB.100.024404"
+  categories: ["quantum-materials"]
+
+- title: "Freezing out of a low-energy bulk spin exciton in SmB6"
+  authors: "Kolawole Akintola, Anand Pal, Sarah R. Dunsiger, Alex C. Y. Fang, Matt Potma, Shanta R. Saha, Xiangfeng Wang, Johnpierre Paglione, Jeff E. Sonier"
+  journal: "npj Quantum Materials, 3 (2018)"
+  doi: "https://doi.org/10.1038/s41535-018-0110-7"
+  categories: ["quantum-materials"]
+
+- title: "Quasi-static internal magnetic field detected in the pseudogap phase of Bi2+xSr2-xCaCu2O8+δ by muon spin relaxation"
+  authors: "Anand Pal, S. R. Dunsiger, K. Akintola, A. C. Y. Fang, A. Elhosary, M. Ishikado, H. Eisaki, J. E. Sonier"
+  journal: "Physical Review B, 97 (2018)"
+  doi: "https://doi.org/10.1103/PhysRevB.97.060502"
+  categories: ["superconductivity", "quantum-materials"]
+
+- title: "Quantum spin fluctuations in the bulk insulating state of pure and Fe-doped SmB6"
+  authors: "K. Akintola, Anand Pal, M. Potma, S. R. Saha, X. F. Wang, J. Paglione, J. E. Sonier"
+  journal: "Physical Review B, 95 (2017)"
+  doi: "https://doi.org/10.1103/PhysRevB.95.245107"
+  categories: ["quantum-materials"]
+
+- title: "Investigation of potential fluctuating intra-unit cell magnetic order in cuprates by μSR"
+  authors: "Anand Pal, K. Akintola, M. Potma, M. Ishikado, H. Eisaki, W. N. Hardy, D. A. Bonn, R. Liang, J. E. Sonier"
+  journal: "Physical Review B, 94 (2016)"
+  doi: "https://doi.org/10.1103/PhysRevB.94.134514"
+  categories: ["superconductivity", "quantum-materials"]
+
+- title: "Metallic monoclinic phase in VO2 induced by electrochemical gating: In situ Raman study"
+  authors: "Satyendra Nath Gupta, Anand Pal, D. V. S. Muthu, P. S. Anil Kumar, A. K. Sood"
+  journal: "EPL, 115 (2016)"
+  doi: "https://doi.org/10.1209/0295-5075/115/17001"
+  categories: ["xray", "quantum-materials"]
+
+- title: "Common effect of chemical and external pressures on the magnetic properties of RCoPO (R = La, Pr, Nd, Sm)"
+  authors: "G. Prando, G. Profeta, A. Continenza, R. Khasanov, Anand Pal, V. P. S. Awana, B. Büchner, S. Sanna"
+  journal: "Physical Review B, 92 (2015)"
+  doi: "https://doi.org/10.1103/PhysRevB.92.144414"
+  categories: ["quantum-materials"]
+
+- title: "Magnetic phase transitions in SmCoAsO"
+  authors: "V. P. S. Awana, I. Nowik, Anand Pal, K. Yamaura, E. Takayama-Muromachi, I. Felner"
+  journal: "Physical Review B, 81 (2010)"
+  doi: "https://doi.org/10.1103/PhysRevB.81.212501"
+  categories: ["quantum-materials"]
