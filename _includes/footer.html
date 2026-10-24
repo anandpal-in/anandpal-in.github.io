@@ -3,64 +3,59 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Dr. Anand Pal</h3>
-                <p>Associate Professor of Physics<br>
-                    Specializing in Quantum Technologies<br>
-                    &amp; Global Higher Education
+                <p>Physicist · Educator · Public Thinker<br>
+                    Science, technology, education, and society
                 </p>
                 <div style="margin-top: 1rem;">
                     <p style="margin-bottom: 0.5rem;">
-                        <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <a href="{{ site.data.profile.scholar }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                             <svg width="20" height="20" fill="currentColor"><use href="#icon-scholar"/></svg>
                             <strong>Google Scholar</strong>
                         </a>
                     </p>
                     <p style="margin-bottom: 0.5rem;">
-                        <a href="https://orcid.org/0000-0003-1602-507X" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <a href="https://orcid.org/{{ site.data.profile.orcid_id }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                             <svg width="20" height="20" fill="#A6CE39"><use href="#icon-orcid"/></svg>
-                            <strong>ORCID:</strong> 0000-0003-1602-507X
+                            <strong>ORCID:</strong> {{ site.data.profile.orcid_id }}
                         </a>
                     </p>
                     <p style="margin-bottom: 0;">
-                        <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId={{ site.data.profile.scopus_id }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                             <svg width="20" height="20" fill="#E9711C"><use href="#icon-scopus"/></svg>
-                            <strong>Scopus ID:</strong> 25226051000
+                            <strong>Scopus ID:</strong> {{ site.data.profile.scopus_id }}
                         </a>
                     </p>
                 </div>
             </div>
             <div class="footer-section">
-                <h4>Quick Links</h4>
+                <h4>Explore</h4>
                 <ul>
                     <li><a href="/about/">About</a></li>
-                    <li><a href="/research/">Academics</a></li>
+                    <li><a href="/writing/">Writing</a></li>
+                    <li><a href="/talks/">Talks</a></li>
+                    <li><a href="/research/">Research</a></li>
+                    <li><a href="/publications/">Publications</a></li>
                     <li><a href="/teaching/">Teaching</a></li>
-                    <li><a href="/writing/">Articles & Essays</a></li>
-                    <li><a href="/mentorship/">Mentorship</a></li>
+                    <li><a href="/feed.xml">RSS Feed</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Connect</h4>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/pal-anand/" target="_blank" aria-label="LinkedIn">
+                    <a href="{{ site.data.profile.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <svg width="24" height="24" fill="currentColor"><use href="#icon-linkedin"/></svg>
                     </a>
-                    <a href="https://x.com/anandpal" target="_blank" aria-label="Twitter">
+                    <a href="{{ site.data.profile.x }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
                         <svg width="24" height="24" fill="currentColor"><use href="#icon-twitter"/></svg>
                     </a>
-                    <a href="https://www.facebook.com/sandhuanand/" target="_blank" aria-label="Facebook">
-                        <svg width="24" height="24" fill="currentColor"><use href="#icon-facebook"/></svg>
-                    </a>
-                    <a href="https://www.instagram.com/anandsandhu_/" target="_blank" aria-label="Instagram">
-                        <svg width="24" height="24" fill="currentColor"><use href="#icon-instagram"/></svg>
-                    </a>
-                    <a href="mailto:anand@example.com" aria-label="Email">
+                    <a href="mailto:{{ site.data.profile.email }}" aria-label="Email">
                         <svg width="24" height="24"><use href="#icon-email"/></svg>
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Dr. Anand Pal. All rights reserved. | Last updated: <span id="last-updated">February 2026</span></p>
+            <p>&copy; {{ site.time | date: "%Y" }} Dr. Anand Pal. All rights reserved. | Last updated: {{ site.time | date: "%B %Y" }}</p>
         </div>
     </div>
 </footer>

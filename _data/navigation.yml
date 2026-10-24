@@ -1,0 +1,15 @@
+# Main menu, in display order. A link is highlighted on any page whose address starts with its url.
+- title: About
+  url: /about/
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Teaching
+  url: /teaching/
+- title: Writing
+  url: /writing/
+- title: Talks
+  url: /talks/
+- title: Contact
+  url: /contact/

@@ -1,0 +1,31 @@
+# Courses, shown on the Teaching page. current: true for courses being taught now.
+- title: "PHYS 1002: Applied Engineering Physics"
+  level: Undergraduate
+  current: true
+  description: "Introduction to quantum mechanics, lasers, optical fibres, and quantum computing for undergraduate engineering students."
+
+- title: "CMP 7001: Essentials of Condensed Matter Physics"
+  level: Graduate
+  current: true
+  description: "Fundamental concepts in condensed matter physics, including crystal structures, lattice dynamics, electronic properties, magnetism, and the physical principles underlying functional materials."
+
+- title: "CMP 7002: Computational Methods for Condensed Matter Physics"
+  level: Graduate
+  current: true
+  description: "Computational approaches for studying condensed matter systems, including numerical methods, electronic-structure calculations, density functional theory, and data-driven approaches to materials research."
+
+- title: "Quantum Mechanics and Fundamentals of Quantum Computing"
+  level: Open Elective
+  description: "Open electives introducing quantum mechanics and the principles of quantum computing."
+
+- title: "Advanced Materials Characterization"
+  level: Graduate
+  description: "XRD, μSR, PPMS, SQUID magnetometry, and other techniques for characterizing quantum and functional materials."
+
+- title: "Scientific Thinking & Creativity"
+  level: Undergraduate
+  description: "An interdisciplinary course on the nature of science: observation, evidence, reasoning, experimentation, uncertainty, and the role of creativity in scientific inquiry."
+
+- title: "Engineering Physics"
+  level: Undergraduate
+  description: "Foundational physics for engineering students covering mechanics, electromagnetism, optics, and modern physics, with emphasis on applications."

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Science, Technology & Human Futures
-description: Dr. Anand Pal - Science, Technology &amp; Human Futures 
+description: Physicist, educator and public thinker writing on science, technology, education, and society.
 ---
 
 <section class="hero">
@@ -14,8 +14,8 @@ description: Dr. Anand Pal - Science, Technology &amp; Human Futures
             <p class="hero-subtitle">Quantum Physicist | Educator | Public Thinker</p>
             <p class="hero-tagline">Research • Education • Public Reason • Global Engagement</p>
             <div class="hero-cta">
-                <a href="/research/" class="btn-primary">Explore Research</a>
-                <a href="/contact/" class="btn-secondary">Get in Touch</a>
+                <a href="/writing/" class="btn-primary">Read the Essays</a>
+                <a href="/research/" class="btn-secondary">Research &amp; Publications</a>
             </div>
         </div>
         <div class="hero-image">
@@ -27,230 +27,79 @@ description: Dr. Anand Pal - Science, Technology &amp; Human Futures
     </div>
 </section>
 
-<section class="metrics" >
+<section class="content-section home-themes" id="themes">
     <div class="container">
-        <div class="metrics-grid">
-            <div class="metric-item">
-                <div class="metric-number">66+</div>
-                <div class="metric-label">Publications (Q1/Q2)</div>
+        <p class="home-statement">Science and technology do more than produce knowledge and tools. They unsettle old certainties, reshape institutions, and change what societies accept as true, possible, and right. My work begins in the physics laboratory and extends to the questions that follow from it: how knowledge is made, how it should be taught, and how it ought to shape public life.</p>
+        <div class="research-areas">
+            <div class="research-area-card">
+                <h3>Science</h3>
+                <p>Science begins with curiosity, the ability to ask questions, the recognition of causality beyond correlations,
+                and an understanding of why nature behaves as it does. My research explores the hidden order of quantum materials, from
+                superconductivity and magnetism to materials for energy applications. Over time, this pursuit has also drawn me to
+                broader questions: what makes scientific knowledge distinctive, how science interacts with tradition, and how we know
+                what we claim to know.</p>
+                <p class="theme-links"><a href="/research/">Research →</a> <a href="/publications/">Publications →</a></p>
             </div>
-            <div class="metric-item">
-                <div class="metric-number">1,100+</div>
-                <div class="metric-label">Citations</div>
+            <div class="research-area-card">
+                <h3>Education</h3>
+                <p>Civilization advances by building on knowledge passed down through generations. That is what makes education so vital,
+                because it is not merely about transferring information; it is also about character building and shaping how we think,
+                question, and engage with the world. With rapidly changing technology, the role of education in nurturing curiosity,
+                critical thinking, scientific temper, and character becomes ever more important.</p>
+                <p class="theme-links"><a href="/teaching/">Teaching →</a> <a href="/writing/">Writing →</a></p>
             </div>
-            <div class="metric-item">
-                <div class="metric-number">19</div>
-                <div class="metric-label">h-index</div>
-            </div>
-            <div class="metric-item">
-                <div class="metric-number">15+</div>
-                <div class="metric-label">Years in Higher Education</div>
+            <div class="research-area-card">
+                <h3>Society</h3>
+                 <p>Every scientific and technological advance unsettles something in society: an assumption, a tradition, or an established
+                way of life. These changes raise questions about the relationship between science and tradition, the consequences of
+                innovation, and how science shapes our understanding of the world. In an age of post-truth narratives and widespread
+                misinformation, understanding how doubt is cultivated and scientific evidence challenged has become increasingly
+                important.</p>
+                <p class="theme-links"><a href="/writing/">Writing →</a> <a href="/talks/">Talks →</a></p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="news-section">
+<section class="news-section" id="latest">
     <div class="container">
         <div class="section-header">
-            <h2>Latest Updates</h2>
-            <a href="/thought/" class="view-all">View All →</a>
+            <h2>Latest Writing</h2>
+            <a href="/writing/" class="view-all">All Articles →</a>
         </div>
         <div class="news-grid">
+            {% comment %} The three most recent articles from _writing/, updated automatically. {% endcomment %}
+            {% assign latest_articles = site.writing | sort: "date" | reverse %}
+            {% for item in latest_articles limit: 3 %}
             <article class="news-card">
-                <div class="news-date">Jan 2026</div>
-                <h3>New Publication in Journal of Alloys and Compounds</h3>
-                <p>Published dimensionally consistent method for crystallite size and microstrain estimation in quantum materials.</p>
-                <a href="/publications/" class="read-more">Read publication →</a>
+                <div class="news-date">{{ item.date | date: "%b %Y" }} · {{ item.category }}</div>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.summary }}</p>
+                <a href="{{ item.url | relative_url }}" class="read-more">Read article →</a>
             </article>
-            <article class="news-card">
-                <div class="news-date">March 2025</div>
-                <h3>Invited Talk: From Bits to Braids</h3>
-                <p>Presenting "From Bits to Braids: Computing in Quantum Flatland" at International Workshop on Quantum Mathematics &amp; Computing (QMAC-2025).</p>
-                <a href="/thought/#invited-talks" class="read-more">Learn more →</a>
-            </article>
-            <article class="news-card">
-                <div class="news-date">Feb 2025</div>
-                <h3>Public Lecture: A Century of Quantum Mechanics</h3>
-                <p>Delivered public lecture on the International Year of Quantum Science and Technology at MIT Bengaluru.</p>
-                <a href="/thought/#invited-talks" class="read-more">Learn more →</a>
-            </article>
+            {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="content-section">
+<section class="news-section home-talks" id="talks">
     <div class="container">
-        <div class="biography-grid">
-            <div>
-                <img src="/assets/images/Profile.jpg" alt="Dr. Anand Pal"
-                    style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px var(--shadow);">
-            </div>
-            <div>
-                <h2>About Me</h2>
-                <p>A journey through physics, education, and the ideas shaping tomorrow's world.</p>
-                <p style="text-align: justify;">I am a quantum physicist, educator, and institutional strategist
-                    dedicated to the idea that the future will be defined not just by what we discover, but by the
-                    quality of our public reasoning and the strength of the institutions we build to guide it. While my
-                    technical research centers on quantum technologies and advanced energy systems, my broader interest
-                    explores how emerging technologies intersect with economic structures, ethical discourse, and global
-                    power dynamics.</p>
-                <p style="text-align: justify;">Education, for me, is not a peripheral activity but a deeply personal
-                    commitment. In my view, education is the core infrastructure of civilization, the foundation upon
-                    which societies build their intellectual, economic, and moral capacities. Having grown up in rural
-                    India, where opportunity was neither assumed nor guaranteed but earned, I experienced directly how
-                    access to education can transform an individual's life trajectory. This experience continues to
-                    shape my dedication to developing institutional systems that expand opportunity at scale. I am
-                    committed to strengthening higher education systems, fostering rational and critical inquiry, and
-                    cultivating human capital capable of navigating rapid technological change with intellectual clarity
-                    and ethical responsibility.</p>
-                <p style="text-align: justify;">As science and technology continue to accelerate, the fundamental
-                    challenge before humanity is not only what we can create, but what we should create, and how we
-                    prepare societies to manage that responsibility. My long-term vision is to contribute to global
-                    conversations on responsible technological progress, institutional reform, and the cultivation of
-                    informed, thoughtful, and socially conscious minds.</p>
-                <p style="text-align: justify;">I believe that the true frontier of science lies not only in discovery,
-                    but in the educational systems, collaborative structures, and public reasoning that enable knowledge
-                    to serve humanity.</p>
-            </div>
+        <div class="section-header">
+            <h2>Talks &amp; Conversations</h2>
+            <a href="/talks/" class="view-all">All Talks →</a>
         </div>
-
-        <h3 style="margin-bottom: 2rem; margin-top: 4rem; color: #0066cc;">Academic Journey</h3>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2026 - Present</div>
-                <div class="timeline-content">
-                    <h4>Associate Dean,School of Basic Sciences, Humanities & Management</h4>
-                    <p style="text-align: justify;">Leading academic and administrative initiatives for the School of
-                        Basic Sciences, Humanities & Management, with a focus on academic quality, faculty development,
-                        interdisciplinary growth, student success, and institutional strategy. </p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-date">2024 - Present</div>
-                <div class="timeline-content">
-                    <h4>Associate Professor</h4>
-                    <p style="text-align: justify;">Advance research in quantum materials and emerging energy systems
-                        while integrating quantum science into modern curricula. Focused on cultivating intellectually
-                        rigorous researchers and strengthening academic ecosystems that support long-term scientific and
-                        technological progress.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2024 - 2026</div>
-                <div class="timeline-content">
-                    <h4>Assistant Director - International Collaborations</h4>
-                    <p style="text-align: justify;">Established and currently lead the International Relations Office to
-                        advance the institute's global vision, designing strategic international partnerships,
-                        dual-degree pathways, and mobility ecosystems that enhance research impact, academic capacity,
-                        and institutional positioning.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2021 - 2024</div>
-                <div class="timeline-content">
-                    <h4>Assistant Professor</h4>
-                    <p style="text-align: justify;">Developed new courses in quantum physics and materials science.
-                        Built research group focused on functional materials and energy systems.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2014 - 2021</div>
-                <div class="timeline-content">
-                    <h4>Postdoctoral Research Fellow</h4>
-                    <p style="text-align: justify;">Conducted advanced research in quantum materials and
-                        superconductivity at IISc (India) and Simon Fraser University, Canada, with experimental work
-                        carried out at leading international facilities including TRIUMF (Canada), Paul Scherrer
-                        Institut (Switzerland), and ISIS Neutron and Muon Source (UK).</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2008 - 2013</div>
-                <div class="timeline-content">
-                    <h4>Ph.D. in Physics</h4>
-                    <p style="text-align: justify;">My doctoral research explored emergent quantum phenomena in
-                        iron-based oxypnictides and chalcogenides, with particular emphasis on understanding how
-                        magnetic order evolves into superconductivity. By designing and synthesizing high-quality
-                        compounds and probing their structural and electronic behavior under varying chemical pressure,
-                        I investigated the delicate interplay between magnetism and superconductivity using advanced
-                        low-temperature and spectroscopic techniques, including muon spin spectroscopy.</p>
-                </div>
-            </div>
+        <div class="news-grid">
+            {% comment %} The three most recent entries in _data/talks.yml. {% endcomment %}
+            {% for talk in site.data.talks limit: 3 %}
+            <article class="news-card">
+                <div class="news-date">{{ talk.type }}{% if talk.date != "" %} · {{ talk.date }}{% endif %}</div>
+                <h3>{{ talk.title }}</h3>
+                <p>{{ talk.venue }}</p>
+                {% if talk.url %}<a href="{{ talk.url }}" class="read-more" target="_blank" rel="noopener">Watch →</a>{% endif %}
+            </article>
+            {% endfor %}
         </div>
+    </div>
 
-        <div
-            style="background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); padding: 3rem; border-radius: 8px; text-align: center; margin-top: 4rem; color: white;">
-            <h3 style="color: white; margin-bottom: 1rem;">Looking Forward</h3>
-            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 900px; margin: 0 auto 1rem;">As we
-                enter an era shaped by disruptive technologies, in which intelligent systems are increasingly capable of
-                autonomous decision-making, I seek to contribute to advancing scientific knowledge and strengthening the
-                institutions that guide its application.</p>
-            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto;">Through
-                research, teaching, and public engagement, I aim to create a future in which scientific innovation
-                aligns with human development, institutional resilience, ethical governance, and sustainable progress
-                for the common good.</p>
-        </div>
     </div>
 </section>
-
-
-<!-- <section class="reading-section">
-    <div class="container">
-        <h2 style="margin-bottom: 2rem;">Currently Reading</h2>
-        <div class="reading-showcase">
-            <div class="book-display">
-                <div class="book-placeholder">
-                    <img src="/assets/images/brainrace.webp" alt="The Great Brain Race book cover">
-                </div>
-                <div class="book-info">
-                    <h3>Featured Book</h3>
-                    <p class="book-title">The Great Brain Race: How Global Universities Are Reshaping the World</p>
-                    <p class="book-author">by Ben Wildavsky</p>
-                    <p class="book-reflection">Explores how international student mobility, branch campuses, for-profit models, and global university rankings are fueling a worldwide "brain race" and transforming the landscape of higher education...</p>
-                    <a href="/thought/#books" class="read-more">See full reading list →</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<!-- <section class="thought-leadership">
-    <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Thought Leadership &amp; Public Engagement</h2>
-        <div class="leadership-grid">
-            <div class="leadership-card">
-                <h3>Invited Talks</h3>
-                <p>20+ international conferences and invited lectures on quantum materials and science education</p>
-                <ul style="margin-top: 1rem; text-align: left;">
-                    <li>"From Bits to Braids: Computing in Quantum Flatland"</li>
-                    <li>"A Century of Quantum Mechanics"</li>
-                    <li>"The Lost Dimension in Nanomaterials Research"</li>
-                </ul>
-            </div>
-            <div class="leadership-card">
-                <h3><a href="/leadership-development/">Community Service &amp; Mentorship</a></h3>
-                <p>Leading multiple student organizations and initiatives</p>
-                <ul style="margin-top: 1rem; text-align: left;">
-                    <li>President, NDLI MITBLR Club</li>
-                    <li>Faculty Advisor, QuantUs (Quantum Computing Club)</li>
-                    <li>Faculty Advisor, IEEE GRSS Chapter</li>
-                    <li>Faculty Advisor, IAESTE</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<!-- <section class="collaboration-cta">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Open to Collaboration</h2>
-            <p>I welcome opportunities to collaborate on research, build academic and institutional partnerships, mentor students, and contribute to global initiatives at the intersection of science, education, and emerging technologies.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
-                <a href="/contact/" class="btn-primary">Research Collaboration</a>
-                <a href="/thought/" class="btn-secondary">International Partnerships</a>
-            </div>
-        </div>
-    </div>
-</section> -->

@@ -1,0 +1,27 @@
+# Talks, lectures and conversations. Add new entries at the TOP (newest first).
+# Fields: title, type (e.g. Invited Talk, Public Lecture, Podcast), date (as it should appear), venue, url (optional)
+- title: "Studying Abroad, and More"
+  type: Podcast
+  date: ""   # TO CONFIRM: release date of the episode
+  venue: "The RADAR Podcast, Bit by Bit, MIT Bengaluru"
+  url: https://www.youtube.com/watch?v=CADciRd2GLw
+
+- title: "The Lost Dimension: How a Typo Became a Scientific Standard in Nanomaterials Research"
+  type: Invited Talk
+  date: "December 12–13, 2025"
+  venue: "National Conference on Advances in Materials Science (NCAMS-2025), REVA University, Bengaluru"
+
+- title: "From Bits to Braids: Computing in Quantum Flatland"
+  type: Invited Talk
+  date: "March 21–22, 2025"
+  venue: "International Workshop on Quantum Mathematics & Computing (QMAC-2025), Manipal Institute of Technology, Bengaluru"
+
+- title: "A Century of Quantum Mechanics: Mysteries, Discoveries, and the Nature of Reality"
+  type: Public Lecture
+  date: "February 4, 2025"
+  venue: "International Year of Quantum Science and Technology, MIT Bengaluru"
+
+- title: "The Enigma of the Pseudogap Phase in High-T<sub>c</sub> Cuprate Superconductors"
+  type: Workshop Talk
+  date: "September 27–28, 2019"
+  venue: "Workshop on Cryogenics and Superconductivity (WOCS-2019), JIIT, Noida"

@@ -1,0 +1,13 @@
+# Research areas, shown on the Research page and used as filters on the Publications page.
+# A publication belongs to an area when its "areas" list in publications.yml contains the area's key.
+- key: superconductivity
+  title: "Superconductivity & Quantum Magnetism"
+  description: "How magnetism, superconductivity and strong electron correlations compete in quantum materials: iron-based and cuprate superconductors, Kondo-lattice and heavy-fermion systems, and pyrochlore iridates. Much of this work uses muon spin spectroscopy (μSR) at TRIUMF (Canada), PSI (Switzerland) and ISIS (UK), alongside transport, magnetic and thermal measurements."
+
+- key: energy
+  title: "Materials for Energy"
+  description: "Designing and characterizing materials for sustainable energy: thermoelectric compounds that convert heat into electricity, electrode materials for next-generation batteries, and thin-film absorbers, combining synthesis and measurement with first-principles calculations."
+
+- key: films-methods
+  title: "Thin Films, Devices & Methods"
+  description: "Growth of oxide and semiconductor thin films, phase-change devices such as vanadium dioxide on silicon photonics, and the soundness of the analytical methods used to characterize materials, including X-ray diffraction line-profile analysis."

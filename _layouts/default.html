@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}Dr. Anand Pal</title>
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% assign meta_description = page.description | default: page.summary | default: site.description | strip_html | escape %}
+    {% assign meta_image = page.image | default: '/assets/images/Profile.jpg' | absolute_url %}
+    <meta name="description" content="{{ meta_description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <!-- Link previews on LinkedIn, X, WhatsApp, etc. -->
+    <meta property="og:type" content="{% if page.collection == 'writing' %}article{% else %}website{% endif %}">
+    <meta property="og:site_name" content="Dr. Anand Pal">
+    <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+    <meta property="og:description" content="{{ meta_description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ meta_image }}">
+    <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+    <link rel="alternate" type="application/atom+xml" title="Writing by Dr. Anand Pal" href="{{ '/feed.xml' | relative_url }}">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     {% include icons.html %}

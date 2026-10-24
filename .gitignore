@@ -4,3 +4,7 @@ _site/
 .jekyll-metadata
 .DS_Store
 Thumbs.db
+
+# Private reference files (never published)
+CV_Anand-Pal.pdf
+rough/

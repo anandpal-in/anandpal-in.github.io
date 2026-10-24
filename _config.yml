@@ -1,6 +1,27 @@
 title: Dr. Anand Pal
 description: Associate Professor of Physics, Specializing in Quantum Technologies & Global Higher Education
-url: "https://anandpal-in.github.io"
+url: "https://anandpal.in"
 baseurl: ""
 permalink: pretty
 markdown: kramdown
+
+collections:
+  # Articles: one file per article in _writing/ (see README).
+  writing:
+    output: true
+    permalink: /writing/:title/
+  # Old addresses (from the live site) that now point elsewhere: one file per address in _redirects/
+  redirects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: writing
+    values:
+      layout: article
+
+exclude:
+  - README.md
+  - CV_Anand-Pal.pdf
+  - rough

@@ -1,0 +1,93 @@
+---
+layout: default
+---
+{% comment %}
+  Template for every article in _writing/. The article file only needs its front matter
+  (title, subtitle, date, category, summary) and the article text; everything else is generated here.
+{% endcomment %}
+{% assign share_url = page.url | absolute_url | url_encode %}
+{% assign share_title = page.title | url_encode %}
+
+<article class="article-container">
+
+    <header class="article-header">
+        <a href="{{ '/writing/' | relative_url }}#{{ page.category | slugify }}" class="article-category">{{ page.category }}</a>
+        <h1 class="article-title">{{ page.title }}</h1>
+        {% if page.subtitle and page.subtitle != "" %}
+        <p class="article-subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        <div class="article-meta">
+            <span class="article-meta-item">
+                <span class="article-meta-icon" aria-hidden="true">✍️</span>
+                <span>Dr. Anand Pal</span>
+            </span>
+            <span class="article-meta-item">
+                <span class="article-meta-icon" aria-hidden="true">📅</span>
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            </span>
+            <span class="article-meta-item">
+                <span class="article-meta-icon" aria-hidden="true">⏱️</span>
+                <span>{% include read-time.html content=content %} min read</span>
+            </span>
+        </div>
+    </header>
+
+    {% if page.image %}
+    <figure class="article-figure">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="eager">
+        {% if page.image_credit %}<figcaption>{{ page.image_credit }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+
+    <div class="article-content">
+        {{ content }}
+    </div>
+
+    <footer class="article-footer">
+
+        {% include author-bio.html %}
+
+        <div class="share-article">
+            <h3>Share This Article</h3>
+            <div class="share-buttons">
+                <a href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}" target="_blank" rel="noopener" class="share-btn share-twitter" aria-label="Share on Twitter">
+                    <svg width="24" height="24" fill="currentColor"><use href="#icon-twitter"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Share on LinkedIn">
+                    <svg width="24" height="24" fill="currentColor"><use href="#icon-linkedin"/></svg>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" class="share-btn share-facebook" aria-label="Share on Facebook">
+                    <svg width="24" height="24" fill="currentColor"><use href="#icon-facebook"/></svg>
+                </a>
+                <a href="mailto:?subject={{ share_title }}&body={{ share_url }}" class="share-btn share-email" aria-label="Share via Email">
+                    <svg width="24" height="24"><use href="#icon-email"/></svg>
+                </a>
+            </div>
+        </div>
+
+        {% comment %} Related: same category first, then the most recent others. {% endcomment %}
+        {% assign others = site.writing | where_exp: "a", "a.url != page.url" | sort: "date" | reverse %}
+        {% assign same_category = others | where: "category", page.category %}
+        {% assign other_category = others | where_exp: "a", "a.category != page.category" %}
+        {% assign related = same_category | concat: other_category %}
+        {% if related.size > 0 %}
+        <section class="related-articles">
+            <h3>Further Reading</h3>
+            <div class="related-grid">
+                {% for item in related limit: 3 %}
+                <a href="{{ item.url | relative_url }}" class="related-card pub-item-link">
+                    <h4>{{ item.title }}</h4>
+                    <p>{{ item.summary | default: item.subtitle }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <div class="back-button-container">
+            <a href="{{ '/writing/' | relative_url }}" class="btn-outline">← Back to All Articles</a>
+        </div>
+
+    </footer>
+
+</article>

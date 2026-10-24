@@ -1,78 +1,682 @@
-- title: "Design principles and engineering approaches for high-performance thermoelectric materials"
-  authors: "S A Bhandarkar, Ashok Rao, Anand Pal"
-  journal: "Energy Reports, 16, 109718 (2026)"
-  doi: "https://doi.org/10.1016/j.egyr.2026.109718"
-  categories: ["thermoelectric", "quantum-materials"]
+# ─────────────────────────────────────────────────────────────────────
+# PUBLICATIONS — the single list used by the Publications and Research pages and the homepage.
+# Add new papers at the TOP. Fields:
+#   title     Paper title (HTML such as <sub>2</sub> is allowed)
+#   authors   Author list as printed; "Anand Pal" is highlighted automatically
+#   venue     Journal or conference name
+#   details   Volume, article number/pages, as printed
+#   year      Publication year
+#   doi       DOI without https://doi.org/ (leave empty if none)
+#   type      journal | conference
+#   areas     Research areas (keys from research_areas.yml): superconductivity, energy, films-methods
+# ─────────────────────────────────────────────────────────────────────
 
+# ── Journal articles ──────────────────────────────────────────────────
+
+- title: "Ab initio investigation of a Janus MoSSe monolayer with high anode capacity for magnesium-ion batteries"
+  authors: "Anusha T T, Manish Kumar, Jagdish Kumar, Anand Pal"
+  venue: "Materials Today Communications"
+  details: "57, 116351"
+  year: 2026
+  doi: 10.1016/j.mtcomm.2026.116351
+  type: journal
+  areas: [energy]
+
+- title: "Design principles and engineering approaches for high-performance thermoelectric materials"
+  authors: "S. A. Bhandarkar, A. Rao, Anand Pal"
+  venue: "Energy Reports"
+  details: "16, 109718"
+  year: 2026
+  doi: 10.1016/j.egyr.2026.109718
+  type: journal
+  areas: [energy]
 
 - title: "A dimensionally consistent size–strain plot method for crystallite size and microstrain estimation"
   authors: "Anand Pal"
-  journal: "Journal of Alloys and Compounds, 1048, 185324 (2025)"
-  doi: "https://doi.org/10.1016/j.jallcom.2025.185324"
-  categories: ["xray", "quantum-materials"]
+  venue: "Journal of Alloys and Compounds"
+  details: "1048, 185324"
+  year: 2025
+  doi: 10.1016/j.jallcom.2025.185324
+  type: journal
+  areas: [films-methods]
 
-- title: "Tuning optical and thermoelectric properties of LaCoO3: Partial substitution of La by isovalent Gd"
-  authors: "U. Deepika Shanubhogue, Anand Pal, Ashok Rao, Saikat Chattopadhyay, Anuradha M. Ashok, Nithya Davis"
-  journal: "Journal of Alloys and Compounds, 941 (2023)"
-  doi: "https://doi.org/10.1016/j.jallcom.2023.168987"
-  categories: ["thermoelectric", "xray"]
+- title: "Impact of elemental composition on the SnS<sub>1−x</sub>Se<sub>x</sub> phase formation and its absorber layer properties"
+  authors: "D. Jain, G. Jain, S. Kumar, S. Agrawal, Anand Pal"
+  venue: "Materials Science and Engineering: B"
+  details: "313, 117961"
+  year: 2025
+  doi: 10.1016/j.mseb.2024.117961
+  type: journal
+  areas: [energy, films-methods]
 
-- title: "Tuning the semimetallic charge transport in the Weyl semimetal candidate Eu2Ir2O7(111) epitaxial thin film with an all-in-all-out spin structure"
+- title: "Ab-initio study of substitution at alkaline earth site on quaternary Heusler alloys LiXNiSb"
+  authors: "J. Kumar, M. Kumar, Raman D. K., Anand Pal"
+  venue: "Materials Research Express"
+  details: "11, 066102"
+  year: 2024
+  doi: 10.1088/2053-1591/ad58aa
+  type: journal
+  areas: [superconductivity]
+
+- title: "Ab-initio study of quaternary Heusler alloys LiAEFeSb (AE = Be, Mg, Ca, Sr or Ba) and prediction of half-metallicity in LiSrFeSb and LiBaFeSb"
+  authors: "J. K. Sharma, A. Dhamija, Anand Pal, J. Kumar"
+  venue: "Computational Materials Science"
+  details: "232, 112679"
+  year: 2024
+  doi: 10.1016/j.commatsci.2023.112679
+  type: journal
+  areas: [superconductivity]
+
+- title: "Exploration of thioacetamide molar concentration on the physical properties of chemically deposited tin sulfide thin films"
+  authors: "D. Jain, G. Jain, Anand Pal, S. Chaudhary, R. K. Saini"
+  venue: "Journal of Materials Research"
+  details: "39, 388"
+  year: 2024
+  doi: 10.1557/s43578-023-01232-1
+  type: journal
+  areas: [energy, films-methods]
+
+- title: "Mixed phase formation of SnS-SnO<sub>2</sub> on air-annealed thermally evaporated SnS thin films"
+  authors: "D. Jain, G. Jain, S. Kumar, S. Agarwal, Anand Pal"
+  venue: "Thin Solid Films"
+  details: "780, 139973"
+  year: 2023
+  doi: 10.1016/j.tsf.2023.139973
+  type: journal
+  areas: [energy, films-methods]
+
+- title: "The role of hetero-interface structures in enhancing the power factor of Cu<sub>2</sub>Se/x%Y<sub>2</sub>O<sub>3</sub> composite thermoelectric materials"
+  authors: "S. Mangavati, A. Rao, Anand Pal, Y. K. Kuo"
+  venue: "Materials Research Bulletin"
+  details: "166, 112362"
+  year: 2023
+  doi: 10.1016/j.materresbull.2023.112362
+  type: journal
+  areas: [energy]
+
+- title: "Anomalous pressure dependence of phonon linewidths in metallic pyrochlore iridates (Eu<sub>1−x</sub>Bi<sub>x</sub>)<sub>2</sub>Ir<sub>2</sub>O<sub>7</sub>: Crossover from incoherent to coherent metal"
+  authors: "A. Thomas, P. Telang, D. Rout, K. Mishra, Anand Pal, D. V. S. Muthu, P. S. Anil Kumar, S. Singh, A. K. Sood"
+  venue: "Pramana"
+  details: "97, 138"
+  year: 2023
+  doi: 10.1007/s12043-023-02620-2
+  type: journal
+  areas: [superconductivity]
+
+- title: "Structural, spectroscopic, and electrical studies of spin-coated ZnO-ZTO thin films for their potential application in photocatalysis and optoelectronics"
+  authors: "Sharanu, Akshayakumar Kompa, Anand Pal, Mohan Rao K"
+  venue: "Ceramics International"
+  details: "49, 18272"
+  year: 2023
+  doi: 10.1016/j.ceramint.2023.02.199
+  type: journal
+  areas: [films-methods]
+
+- title: "Tuning optical and thermoelectric properties of LaCoO<sub>3</sub>: Partial substitution of La by isovalent Gd"
+  authors: "Deepika Shanubhogue U, Anand Pal, Ashok Rao, Saikat Chattopadhyay, Anuradha M. Ashok, Nithya Davis"
+  venue: "Journal of Alloys and Compounds"
+  details: "941, 168987"
+  year: 2023
+  doi: 10.1016/j.jallcom.2023.168987
+  type: journal
+  areas: [energy]
+
+- title: "Enhancement of low-temperature thermoelectric performance via Pb doping in Cu<sub>3</sub>SbSe<sub>4</sub>"
+  authors: "Anand Pal, K. Shyam Prasad, K. Gurukrishna, Suraj Mangavati, P. Poornesh, Ashok Rao, Yin-Chun Chung, Y. K. Kuo"
+  venue: "Journal of Physics and Chemistry of Solids"
+  details: "175, 111197"
+  year: 2023
+  doi: 10.1016/j.jpcs.2022.111197
+  type: journal
+  areas: [energy]
+
+- title: 'Comments on "X-ray analysis of ZnO nanoparticles by Williamson Hall and size-strain plot methods" Solid State Sciences 13 (2011) 251–256'
+  authors: "Anand Pal"
+  venue: "Solid State Sciences"
+  details: "135, 107060"
+  year: 2023
+  doi: 10.1016/j.solidstatesciences.2022.107060
+  type: journal
+  areas: [films-methods]
+
+- title: "Tuning the semimetallic charge transport in the Weyl semimetal candidate Eu<sub>2</sub>Ir<sub>2</sub>O<sub>7</sub> (111) epitaxial thin film with an all-in-all-out spin structure"
   authors: "Mithun Ghosh, Shwetha G. Bhat, Anand Pal, P. S. Anil Kumar"
-  journal: "Journal of Physics: Condensed Matter, 34 (2022)"
-  doi: "https://doi.org/10.1088/1361-648X/ac50da"
-  categories: ["quantum-materials"]
+  venue: "Journal of Physics: Condensed Matter"
+  details: "34, 165701"
+  year: 2022
+  doi: 10.1088/1361-648X/ac50da
+  type: journal
+  areas: [superconductivity, films-methods]
 
-- title: "Investigation of cationic disorder effects on the transport and magnetic properties of perovskite Pr0.7-xRExSr0.3MnO3 (RE = Nd, Sm, Gd)"
-  authors: "Anand Pal, Ashok Rao, Dhananjaya Kekuda, B. S. Nagaraja, Rittwick Mondal, Dipankar Biswas"
-  journal: "Journal of Magnetism and Magnetic Materials, 512 (2020)"
-  doi: "https://doi.org/10.1016/j.jmmm.2020.167011"
-  categories: ["quantum-materials", "thermoelectric"]
+- title: "Reduction in low-temperature thermal conductivity of Cu<sub>2</sub>Se via substitution of Se by Te atoms"
+  authors: "S. Mangavati, Anand Pal, Ashok Rao, Z. Jiang, Y. Kuo"
+  venue: "Journal of Physics and Chemistry of Solids"
+  details: "160, 110301"
+  year: 2022
+  doi: 10.1016/j.jpcs.2021.110301
+  type: journal
+  areas: [energy]
+
+- title: "Investigation of cationic disorder effects on the transport and magnetic properties of perovskite Pr<sub>0.7−x</sub>RE<sub>x</sub>Sr<sub>0.3</sub>MnO<sub>3</sub> (x = 0.0, 0.2; RE = Nd, Sm, &amp; Gd)"
+  authors: "Anand Pal, Ashok Rao, D. Kekuda, B. S. Nagaraja, R. Mondal, D. Biswas"
+  venue: "Journal of Magnetism and Magnetic Materials"
+  details: "512, 167011"
+  year: 2020
+  doi: 10.1016/j.jmmm.2020.167011
+  type: journal
+  areas: [superconductivity]
+
+- title: "Enhancement of temperature coefficient of resistance (TCR) and magnetoresistance (MR) of La<sub>0.67−x</sub>RE<sub>x</sub>Ca<sub>0.33</sub>MnO<sub>3</sub> (RE = Nd, Sm, and Gd, x = 0.0, 0.1) system via rare-earth substitution"
+  authors: "Anand Pal, B. S. Nagaraja, K. J. Rachana, K. V. Supriya, D. Kekuda, Ashok Rao, C. R. Li, Y. K. Kuo"
+  venue: "Materials Research Express"
+  details: "7, 036102"
+  year: 2020
+  doi: 10.1088/2053-1591/ab7c20
+  type: journal
+  areas: [superconductivity]
+
+- title: "Thermally-induced optical modulation in a vanadium dioxide-on-silicon waveguide"
+  authors: "V. Jeyaselvan, Anand Pal, P. S. Anil Kumar, S. K. Selvaraja"
+  venue: "OSA Continuum"
+  details: "3, 132"
+  year: 2020
+  doi: 10.1364/OSAC.382861
+  type: journal
+  areas: [films-methods]
+
+- title: "Investigation of fundamental and higher harmonic AC magnetic susceptibility of FeSe<sub>0.5</sub>Te<sub>0.5</sub> superconductor"
+  authors: "Anand Pal, P. Rani, A. K. Hafiz, Ashok Rao, V. P. S. Awana"
+  venue: "Materials Research Express"
+  details: "6, 096004"
+  year: 2019
+  doi: 10.1088/2053-1591/ab325a
+  type: journal
+  areas: [superconductivity]
 
 - title: "Magnetic field induced effects in the quasikagome Kondo lattice system CePtPb"
   authors: "A. C. Y. Fang, S. R. Dunsiger, Anand Pal, K. Akintola, J. E. Sonier, E. Mun"
-  journal: "Physical Review B, 100 (2019)"
-  doi: "https://doi.org/10.1103/PhysRevB.100.024404"
-  categories: ["quantum-materials"]
+  venue: "Physical Review B"
+  details: "100, 024404"
+  year: 2019
+  doi: 10.1103/PhysRevB.100.024404
+  type: journal
+  areas: [superconductivity]
 
-- title: "Freezing out of a low-energy bulk spin exciton in SmB6"
-  authors: "Kolawole Akintola, Anand Pal, Sarah R. Dunsiger, Alex C. Y. Fang, Matt Potma, Shanta R. Saha, Xiangfeng Wang, Johnpierre Paglione, Jeff E. Sonier"
-  journal: "npj Quantum Materials, 3 (2018)"
-  doi: "https://doi.org/10.1038/s41535-018-0110-7"
-  categories: ["quantum-materials"]
+- title: "Freezing out of a low-energy bulk spin exciton in SmB<sub>6</sub>"
+  authors: "K. Akintola, Anand Pal, S. R. Dunsiger, A. C. Y. Fang, M. Potma, S. R. Saha, X. F. Wang, J. Paglione, J. E. Sonier"
+  venue: "npj Quantum Materials"
+  details: "3, 36"
+  year: 2018
+  doi: 10.1038/s41535-018-0110-7
+  type: journal
+  areas: [superconductivity]
 
-- title: "Quasi-static internal magnetic field detected in the pseudogap phase of Bi2+xSr2-xCaCu2O8+δ by muon spin relaxation"
-  authors: "Anand Pal, S. R. Dunsiger, K. Akintola, A. C. Y. Fang, A. Elhosary, M. Ishikado, H. Eisaki, J. E. Sonier"
-  journal: "Physical Review B, 97 (2018)"
-  doi: "https://doi.org/10.1103/PhysRevB.97.060502"
-  categories: ["superconductivity", "quantum-materials"]
+- title: "Quasi-static internal magnetic field detected in the pseudogap phase of Bi<sub>2+x</sub>Sr<sub>2−x</sub>CaCu<sub>2</sub>O<sub>8+δ</sub> by μSR"
+  authors: "Anand Pal, S. R. Dunsiger, K. Akintola, A. Fang, A. Elhosary, M. Ishikado, H. Eisaki, J. E. Sonier"
+  venue: "Physical Review B (Rapid Communications)"
+  details: "97, 060502(R)"
+  year: 2018
+  doi: 10.1103/PhysRevB.97.060502
+  type: journal
+  areas: [superconductivity]
 
-- title: "Quantum spin fluctuations in the bulk insulating state of pure and Fe-doped SmB6"
+- title: "Quantum spin fluctuations in the bulk insulating state of pure and Fe-doped SmB<sub>6</sub>"
   authors: "K. Akintola, Anand Pal, M. Potma, S. R. Saha, X. F. Wang, J. Paglione, J. E. Sonier"
-  journal: "Physical Review B, 95 (2017)"
-  doi: "https://doi.org/10.1103/PhysRevB.95.245107"
-  categories: ["quantum-materials"]
+  venue: "Physical Review B"
+  details: "95, 245107"
+  year: 2017
+  doi: 10.1103/PhysRevB.95.245107
+  type: journal
+  areas: [superconductivity]
 
 - title: "Investigation of potential fluctuating intra-unit cell magnetic order in cuprates by μSR"
   authors: "Anand Pal, K. Akintola, M. Potma, M. Ishikado, H. Eisaki, W. N. Hardy, D. A. Bonn, R. Liang, J. E. Sonier"
-  journal: "Physical Review B, 94 (2016)"
-  doi: "https://doi.org/10.1103/PhysRevB.94.134514"
-  categories: ["superconductivity", "quantum-materials"]
+  venue: "Physical Review B"
+  details: "94, 134514"
+  year: 2016
+  doi: 10.1103/PhysRevB.94.134514
+  type: journal
+  areas: [superconductivity]
 
-- title: "Metallic monoclinic phase in VO2 induced by electrochemical gating: In situ Raman study"
-  authors: "Satyendra Nath Gupta, Anand Pal, D. V. S. Muthu, P. S. Anil Kumar, A. K. Sood"
-  journal: "EPL, 115 (2016)"
-  doi: "https://doi.org/10.1209/0295-5075/115/17001"
-  categories: ["xray", "quantum-materials"]
+- title: "Metallic monoclinic phase in VO<sub>2</sub> induced by electrochemical gating: In situ Raman study"
+  authors: "S. N. Gupta, Anand Pal, D. V. S. Muthu, P. S. Anil Kumar, A. K. Sood"
+  venue: "EPL (Europhysics Letters)"
+  details: "115, 17001"
+  year: 2016
+  doi: 10.1209/0295-5075/115/17001
+  type: journal
+  areas: [films-methods]
 
-- title: "Common effect of chemical and external pressures on the magnetic properties of RCoPO (R = La, Pr, Nd, Sm)"
+- title: "Tuning the magneto-crystalline anisotropy in RCoPO by means of R substitution: A ferromagnetic resonance study"
+  authors: "G. Prando, A. Alfonsov, Anand Pal, V. P. S. Awana, B. Büchner, V. Kataev"
+  venue: "Physical Review B"
+  details: "94, 024412"
+  year: 2016
+  doi: 10.1103/PhysRevB.94.024412
+  type: journal
+  areas: [superconductivity]
+
+- title: "Common effect of chemical and external pressures on the magnetic properties of RCoPO (R = La, Pr, Nd &amp; Sm) II"
   authors: "G. Prando, G. Profeta, A. Continenza, R. Khasanov, Anand Pal, V. P. S. Awana, B. Büchner, S. Sanna"
-  journal: "Physical Review B, 92 (2015)"
-  doi: "https://doi.org/10.1103/PhysRevB.92.144414"
-  categories: ["quantum-materials"]
+  venue: "Physical Review B"
+  details: "92, 144414"
+  year: 2015
+  doi: 10.1103/PhysRevB.92.144414
+  type: journal
+  areas: [superconductivity]
+
+- title: "Importance of structural distortions in enhancement of transition temperature in FeSe<sub>1−x</sub>Te<sub>x</sub> superconductors"
+  authors: "Kapil Ingle, K. R. Priolkar, Anand Pal, R. A. Zargar, V. P. S. Awana, S. Emura"
+  venue: "Superconductor Science and Technology"
+  details: "28, 015015"
+  year: 2015
+  doi: 10.1088/0953-2048/28/1/015015
+  type: journal
+  areas: [superconductivity]
+
+- title: "Effect of external pressure on the magnetic properties of RCoAsO (R = La, Pr, Sm): A μSR study"
+  authors: "G. Prando, S. Sanna, R. Khasanov, Anand Pal, E. M. Brüning, M. Mazzani, V. P. S. Awana, B. Büchner, R. De Renzi"
+  venue: "Journal of Physics and Chemistry of Solids"
+  details: "84, 63"
+  year: 2015
+  doi: 10.1016/j.jpcs.2015.01.012
+  type: journal
+  areas: [superconductivity]
+
+- title: "Evolution of superconductivity in PrFe<sub>1−x</sub>Co<sub>x</sub>AsO (x = 0.0–1.0)"
+  authors: "Poonam Rani, Anand Pal, V. P. S. Awana"
+  venue: "Solid State Communications"
+  details: "187, 5"
+  year: 2014
+  doi: 10.1016/j.ssc.2014.02.006
+  type: journal
+  areas: [superconductivity]
+
+- title: "Local structural distortions and their role in superconductivity in SmFeAsO<sub>1−x</sub>F<sub>x</sub> superconductors"
+  authors: "Kapil Ingle, K. R. Priolkar, Anand Pal, V. P. S. Awana, S. Emura"
+  venue: "Superconductor Science and Technology"
+  details: "27, 075010"
+  year: 2014
+  doi: 10.1088/0953-2048/27/7/075010
+  type: journal
+  areas: [superconductivity]
+
+- title: "Electrical and magnetic behaviour of PrFeAsO<sub>0.8</sub>F<sub>0.2</sub> superconductor"
+  authors: "R. S. Meena, Anand Pal, K. V. R. Rao, H. Kishan, V. P. S. Awana"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "27, 687"
+  year: 2014
+  doi: 10.1007/s10948-013-2358-2
+  type: journal
+  areas: [superconductivity]
+
+- title: "Structural, electrical and magnetic behaviour of FeTe<sub>0.5</sub>Se<sub>0.5</sub> superconductor"
+  authors: "R. A. Zargar, Anand Pal, A. K. Hafiz, V. P. S. Awana"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "27, 897"
+  year: 2014
+  doi: 10.1007/s10948-014-2507-2
+  type: journal
+  areas: [superconductivity]
+
+- title: "Anomalous magnetism of Pr in PrCoAsO"
+  authors: "Brajesh Tiwari, Anand Pal, V. P. S. Awana"
+  venue: "AIP Advances"
+  details: "4, 017120"
+  year: 2014
+  doi: 10.1063/1.4862777
+  type: journal
+  areas: [superconductivity]
+
+- title: "High field magneto-transport study of YBa<sub>2</sub>Cu<sub>3</sub>O<sub>7</sub>:Ag<sub>x</sub> (x = 0.00–0.20)"
+  authors: "Poonam Rani, Anand Pal, V. P. S. Awana"
+  venue: "Physica C"
+  details: "497, 19"
+  year: 2014
+  doi: 10.1016/j.physc.2013.10.008
+  type: journal
+  areas: [superconductivity]
+
+- title: "Synthesis and physical properties of pure and F-doped REFeAsO (RE = Pr, Nd and Sm)"
+  authors: "R. S. Meena, Anand Pal, K. V. R. Rao, V. P. S. Awana"
+  venue: "Indian Journal of Cryogenics"
+  details: "181, 39"
+  year: 2014
+  doi: 10.5958/2349-2120.2014.00823.1
+  type: journal
+  areas: [superconductivity]
+
+- title: "Magneto transport and thermal properties characterization of 55 K superconductor SmFeAsO<sub>0.85</sub>F<sub>0.15</sub>"
+  authors: "Amit Srivastava, Anand Pal, Saurabh Singh, C. Shekhar, H. K. Singh, V. P. S. Awana, O. N. Srivastava"
+  venue: "AIP Advances"
+  details: "3, 092113"
+  year: 2013
+  doi: 10.1063/1.4821335
+  type: journal
+  areas: [superconductivity]
+
+- title: "Study of Ni and Zn doped CeOFeAs: Effect on the structural transition and specific heat capacity"
+  authors: "S. J. Singh, Jai Prakash, Anand Pal, S. Patnaik, V. P. S. Awana, A. K. Ganguli"
+  venue: "Physica C"
+  details: "490, 49"
+  year: 2013
+  doi: 10.1016/j.physc.2013.04.077
+  type: journal
+  areas: [superconductivity]
+
+- title: "Local electromagnetic properties of magnetic pnictides: A comparative study probed by NMR measurements"
+  authors: "M. Majumder, K. Ghoshray, A. Ghoshray, Anand Pal, V. P. S. Awana"
+  venue: "Journal of Physics: Condensed Matter"
+  details: "25, 196002"
+  year: 2013
+  doi: 10.1088/0953-8984/25/19/196002
+  type: journal
+  areas: [superconductivity]
+
+- title: "Appearance and disappearance of superconductivity in SmFe<sub>1−x</sub>Ni<sub>x</sub>AsO (x = 0.0 to 1.0)"
+  authors: "Anand Pal, S. S. Mehdi, M. Husain, V. P. S. Awana"
+  venue: "Solid State Sciences"
+  details: "15, 123"
+  year: 2013
+  doi: 10.1016/j.solidstatesciences.2012.10.004
+  type: journal
+  areas: [superconductivity]
+
+- title: "Magneto-transport and magnetic susceptibility of SmFeAsO<sub>1−x</sub>F<sub>x</sub> (x = 0.0 &amp; 0.20)"
+  authors: "R. S. Meena, Anand Pal, S. K. Kumar, K. V. R. Rao, V. P. S. Awana"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "26, 2383"
+  year: 2013
+  doi: 10.1007/s10948-012-1824-6
+  type: journal
+  areas: [superconductivity]
+
+- title: "Appearance of superconductivity in layered LaO<sub>0.5</sub>F<sub>0.5</sub>BiS<sub>2</sub>"
+  authors: "V. P. S. Awana, Anuj Kumar, R. Jha, S. K. Singh, Anand Pal, Shruti, J. Saha, S. Patnaik"
+  venue: "Solid State Communications"
+  details: "157, 21"
+  year: 2013
+  doi: 10.1016/j.ssc.2012.11.021
+  type: journal
+  areas: [superconductivity]
+
+- title: "Common effect of chemical and external pressures on the magnetic properties of RCoPO (R = La, Pr)"
+  authors: "G. Prando, P. Bonfà, S. Sanna, G. Profeta, R. Khasanov, F. Bernardini, M. Mazzani, E. M. Brüning, H.-J. Grafe, Anand Pal, V. P. S. Awana, B. Büchner, R. De Renzi, P. Carretta"
+  venue: "Physical Review B"
+  details: "87, 064401"
+  year: 2013
+  doi: 10.1103/PhysRevB.87.064401
+  type: journal
+  areas: [superconductivity]
+
+- title: "Iron-oxypnictide superconductors: Synthesis and physical property characterization"
+  authors: "R. S. Meena, K. V. R. Rao, Anand Pal, B. Gahtori, H. Kishan, V. P. S. Awana"
+  venue: "Indian Journal of Cryogenics"
+  details: "38, 57–61"
+  year: 2013
+  doi: ""
+  type: journal
+  areas: [superconductivity]
+
+- title: "Anisotropic spin-fluctuations in SmCoPO revealed by <sup>31</sup>P NMR measurement"
+  authors: "M. Majumder, K. Ghoshray, A. Ghoshray, Anand Pal, V. P. S. Awana"
+  venue: "Journal of the Physical Society of Japan"
+  details: "81, 054702"
+  year: 2012
+  doi: 10.1143/JPSJ.81.054702
+  type: journal
+  areas: [superconductivity]
+
+- title: "High field (14 Tesla) magneto transport of Sm/PrFeAsO"
+  authors: "R. S. Meena, S. K. Singh, Anand Pal, Anuj Kumar, R. Jha, K. V. R. Rao, X. L. Wang, V. P. S. Awana"
+  venue: "Journal of Applied Physics"
+  details: "111, 07E323"
+  year: 2012
+  doi: 10.1063/1.3675156
+  type: journal
+  areas: [superconductivity]
+
+- title: "Effect of Co-doping on the resistivity and thermopower of SmFe<sub>1−x</sub>Co<sub>x</sub>AsO (0.0 ≤ x ≤ 0.3)"
+  authors: "Gunadhor S. Okram, Netram Kaurav, Ajay Soni, Anand Pal, V. P. S. Awana"
+  venue: "AIP Advances"
+  details: "2, 042137"
+  year: 2012
+  doi: 10.1063/1.4766936
+  type: journal
+  areas: [superconductivity]
+
+- title: "Physical property characterization of single step synthesized NdFeAsO<sub>0.80</sub>F<sub>0.20</sub> bulk 50 K superconductor"
+  authors: "V. P. S. Awana, R. S. Meena, Anand Pal, Arpita Vajpayee, K. V. R. Rao, H. Kishan"
+  venue: "The European Physical Journal B"
+  details: "79, 139"
+  year: 2011
+  doi: 10.1140/epjb/e2010-10674-x
+  type: journal
+  areas: [superconductivity]
+
+- title: "Interplay of Sm<sup>4f</sup> and Co<sup>3d</sup> spins in SmCoAsO"
+  authors: "V. P. S. Awana, Anand Pal, B. Gahtori, H. Kishan"
+  venue: "Journal of Magnetism and Magnetic Materials"
+  details: "323, 1460"
+  year: 2011
+  doi: 10.1016/j.jmmm.2010.12.045
+  type: journal
+  areas: [superconductivity]
+
+- title: "Superconductivity and thermal properties of sulphur doped FeTe with effect of oxygen post annealing"
+  authors: "V. P. S. Awana, Anand Pal, Arpita Vajpayee, B. Gahtori, H. Kishan"
+  venue: "Physica C"
+  details: "471, 77"
+  year: 2011
+  doi: 10.1016/j.physc.2010.11.006
+  type: journal
+  areas: [superconductivity]
+
+- title: "Intriguing complex magnetism of Co in RECoAsO (RE = La, Nd, and Sm)"
+  authors: "Anand Pal, M. Tropeano, S. D. Kaushik, M. Husain, H. Kishan, V. P. S. Awana"
+  venue: "Journal of Applied Physics"
+  details: "109, 07E121"
+  year: 2011
+  doi: 10.1063/1.3551743
+  type: journal
+  areas: [superconductivity]
+
+- title: "Anomalous heat capacity and X-ray photoelectron spectroscopy of superconducting FeSe<sub>0.5</sub>Te<sub>0.5</sub>"
+  authors: "V. P. S. Awana, Govind, Anand Pal, B. Gahtori, S. D. Kaushik, Arpita Vajpayee, Jagdish Kumar, H. Kishan"
+  venue: "Journal of Applied Physics"
+  details: "109, 07E122"
+  year: 2011
+  doi: 10.1063/1.3556682
+  type: journal
+  areas: [superconductivity]
+
+- title: "Appearance and disappearance of superconductivity with Fe site Co substitution in SmFe<sub>1−x</sub>Co<sub>x</sub>AsO (x = 0.0–1.0)"
+  authors: "V. P. S. Awana, Anand Pal, M. Husain, H. Kishan"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "24, 151"
+  year: 2011
+  doi: 10.1007/s10948-010-0910-x
+  type: journal
+  areas: [superconductivity]
+
+- title: "Role of interstitial “caged” Fe in the superconductivity of FeTe<sub>0.5</sub>Se<sub>0.5</sub>"
+  authors: "Anuj Kumar, Anand Pal, R. P. Tandon, V. P. S. Awana"
+  venue: "Solid State Communications"
+  details: "151, 1767"
+  year: 2011
+  doi: 10.1016/j.ssc.2011.08.031
+  type: journal
+  areas: [superconductivity]
+
+- title: "Complex magnetism and magneto-transport of RECoPO (RE = La, Nd &amp; Sm)"
+  authors: "Anand Pal, S. S. Mehdi, M. Husain, B. Gahtori, V. P. S. Awana"
+  venue: "Journal of Applied Physics"
+  details: "110, 103913"
+  year: 2011
+  doi: 10.1063/1.3662151
+  type: journal
+  areas: [superconductivity]
+
+- title: "Suppression of spin density wave character of (Sm/Gd)FeAsO by substitution of Ru at Fe site"
+  authors: "Anand Pal, A. Vajpayee, V. P. S. Awana, M. Husain, H. Kishan"
+  venue: "Physica C"
+  details: "470, S491–S492"
+  year: 2010
+  doi: 10.1016/j.physc.2009.11.015
+  type: journal
+  areas: [superconductivity]
+
+- title: "From weak magnetism (spin density wave) to ferromagnetic state for SmFe<sub>1−x</sub>Ru<sub>x</sub>AsO system with x = 0.0–0.50"
+  authors: "V. P. S. Awana, Anand Pal, Arpita Vajpayee, M. Husain, K. Yamaura, E. Takayama-Muromachi, H. Kishan"
+  venue: "Physica C"
+  details: "470, S424"
+  year: 2010
+  doi: 10.1016/j.physc.2009.10.105
+  type: journal
+  areas: [superconductivity]
+
+- title: "Synthesis and structural details of BiOCu<sub>1−x</sub>S: Possible new entrant in series of exotic superconductors?"
+  authors: "Anand Pal, H. Kishan, V. P. S. Awana"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "23, 301–304"
+  year: 2010
+  doi: 10.1007/s10948-010-0760-6
+  type: journal
+  areas: [superconductivity]
+
+- title: "Superconductivity in SmFe<sub>1−x</sub>Co<sub>x</sub>AsO (x = 0.0–0.30)"
+  authors: "V. P. S. Awana, Anand Pal, Arpita Vajpayee, R. S. Meena, H. Kishan, M. Husain, R. Zeng, S. Yu, K. Yamaura, E. Takayama-Muromachi"
+  venue: "Journal of Applied Physics"
+  details: "107, 09E146"
+  year: 2010
+  doi: 10.1063/1.3366601
+  type: journal
+  areas: [superconductivity]
+
+- title: "Synthesis and physical properties of FeSe<sub>0.5</sub>Te<sub>0.5</sub> superconductor"
+  authors: "V. P. S. Awana, Anand Pal, A. Vajpayee, Monika Mudgel, H. Kishan, M. Husain, R. Zeng, S. Yu, Y. F. Guo, Y. G. Shi, K. Yamaura, E. Takayama-Muromachi"
+  venue: "Journal of Applied Physics"
+  details: "107, 09E128"
+  year: 2010
+  doi: 10.1063/1.3366602
+  type: journal
+  areas: [superconductivity]
 
 - title: "Magnetic phase transitions in SmCoAsO"
   authors: "V. P. S. Awana, I. Nowik, Anand Pal, K. Yamaura, E. Takayama-Muromachi, I. Felner"
-  journal: "Physical Review B, 81 (2010)"
-  doi: "https://doi.org/10.1103/PhysRevB.81.212501"
-  categories: ["quantum-materials"]
+  venue: "Physical Review B"
+  details: "81, 212501"
+  year: 2010
+  doi: 10.1103/PhysRevB.81.212501
+  type: journal
+  areas: [superconductivity]
+
+- title: "Synthesis of SmFeAsO by an easy and versatile route and its physical property characterization"
+  authors: "V. P. S. Awana, Anand Pal, A. Vajpayee, H. Kishan, G. A. Alvarez, K. Yamaura, E. Takayama-Muromachi"
+  venue: "Journal of Applied Physics"
+  details: "105, 07E316"
+  year: 2009
+  doi: 10.1063/1.3072382
+  type: journal
+  areas: [superconductivity]
+
+- title: "Superconductivity at 14 K in SmFe<sub>0.9</sub>Co<sub>0.1</sub>AsO"
+  authors: "V. P. S. Awana, A. Vajpayee, Anand Pal, Monika Mudgel, R. S. Meena, H. Kishan"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "22, L623"
+  year: 2009
+  doi: 10.1007/s10948-009-0498-1
+  type: journal
+  areas: [superconductivity]
+
+- title: "Single step synthesis of Sr<sub>4</sub>V<sub>2</sub>O<sub>6</sub>Fe<sub>2</sub>As<sub>2</sub>: The blocking layer based potential future superconductor"
+  authors: "Anand Pal, A. Vajpayee, R. S. Meena, H. Kishan, V. P. S. Awana"
+  venue: "Journal of Superconductivity and Novel Magnetism"
+  details: "22, L619"
+  year: 2009
+  doi: 10.1007/s10948-009-0494-5
+  type: journal
+  areas: [superconductivity]
+
+# ── Conference proceedings ────────────────────────────────────────────
+
+- title: "Jailbreaks using non-standard Unicode characters on large language models"
+  authors: "Johan S. Daniel, Anand Pal"
+  venue: "International Conference on Data Science & Exploration in Artificial Intelligence, Manipal Institute of Technology, Bengaluru"
+  details: ""
+  year: 2024
+  doi: ""
+  type: conference
+  areas: []
+
+- title: "Refractive index tunability and switching with vanadium dioxide on silicon waveguides"
+  authors: "V. Jeyaselvan, Anand Pal, P. S. Anil Kumar, S. K. Selvaraja"
+  venue: "European Conference on Integrated Optics, Ghent University, Belgium"
+  details: ""
+  year: 2019
+  doi: ""
+  type: conference
+  areas: [films-methods]
+
+- title: "Upper critical field and AC-susceptibility studies on FeTe<sub>0.5</sub>Se<sub>0.5</sub> superconductor"
+  authors: "R. A. Zargar, Anand Pal, A. K. Hafiz, V. P. S. Awana"
+  venue: "AIP Conference Proceedings"
+  details: "1665, 130043"
+  year: 2015
+  doi: 10.1063/1.4918191
+  type: conference
+  areas: [superconductivity]
+
+- title: "Superconductivity of Fe based pnictides and chalcogenides: Material aspects, doping routes, future prospects and challenges"
+  authors: "V. P. S. Awana, Anuj Kumar, Anand Pal, S. K. Singh, R. S. Meena, R. Jha, Jagdish Kumar, B. Gahtori, H. Kishan"
+  venue: "AIP Conference Proceedings"
+  details: "1447, 8"
+  year: 2012
+  doi: 10.1063/1.4709861
+  type: conference
+  areas: [superconductivity]
+
+- title: "Control of interstitial Fe and its impact on superconductivity of FeTe<sub>0.5</sub>Se<sub>0.5</sub>"
+  authors: "V. P. S. Awana, Anuj Kumar, Anand Pal"
+  venue: "AIP Conference Proceedings"
+  details: "1447, 869"
+  year: 2012
+  doi: 10.1063/1.4710278
+  type: conference
+  areas: [superconductivity]
+
+- title: "High field transport and magnetic properties of RECo(P/As)O (RE = La, Nd &amp; Sm)"
+  authors: "Anand Pal, S. S. Mehdi, M. Husain, V. P. S. Awana"
+  venue: "AIP Conference Proceedings"
+  details: "1447, 873"
+  year: 2012
+  doi: 10.1063/1.4710280
+  type: conference
+  areas: [superconductivity]
+
+- title: "Anisotropic spin-fluctuation in SmCoPO: <sup>31</sup>P NMR study"
+  authors: "M. Majumder, K. Ghoshray, A. Ghoshray, Anand Pal, V. P. S. Awana"
+  venue: "AIP Conference Proceedings"
+  details: "1447, 1171"
+  year: 2012
+  doi: 10.1063/1.4710426
+  type: conference
+  areas: [superconductivity]
+
+- title: "Optimisation of superconductivity in SmFe<sub>1−x</sub>Co<sub>x</sub>AsO (x = 0.0–1.0)"
+  authors: "Anand Pal, R. S. Meena, H. Kishan, M. Husain, V. P. S. Awana"
+  venue: "Proceedings of the 54th DAE Solid State Physics Symposium"
+  details: "809–810"
+  year: 2009
+  doi: ""
+  type: conference
+  areas: [superconductivity]
+
+- title: "Synthesis, structure, electrical and thermal properties of SmFeAsO"
+  authors: "Anand Pal, A. Vajpayee, M. Mudgel, V. P. S. Awana, H. Kishan"
+  venue: "Proceedings of the 53rd DAE Solid State Physics Symposium"
+  details: "905–906"
+  year: 2008
+  doi: ""
+  type: conference
+  areas: [superconductivity]

@@ -1,0 +1,1 @@
+{% comment %} Reading time in minutes at ~200 words per minute. Usage: {% include read-time.html content=article.content %} {% endcomment %}{% assign rt_words = include.content | strip_html | number_of_words %}{{ rt_words | plus: 199 | divided_by: 200 | at_least: 1 }}
