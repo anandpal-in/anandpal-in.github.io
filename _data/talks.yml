@@ -1,10 +1,12 @@
 # Talks, lectures and conversations. Add new entries at the TOP (newest first).
-# Fields: title, type (e.g. Invited Talk, Public Lecture, Podcast), date (as it should appear), venue, url (optional)
+# Fields: title, type (e.g. Invited Talk, Public Lecture, Podcast), date (as it should appear), venue,
+#         url (optional link to the video or event), image (optional thumbnail)
 - title: "Studying Abroad, and More"
   type: Podcast
   date: ""   # TO CONFIRM: release date of the episode
   venue: "The RADAR Podcast, Bit by Bit, MIT Bengaluru"
   url: https://www.youtube.com/watch?v=CADciRd2GLw
+  image: https://i.ytimg.com/vi/CADciRd2GLw/maxresdefault.jpg
 
 - title: "The Lost Dimension: How a Typo Became a Scientific Standard in Nanomaterials Research"
   type: Invited Talk

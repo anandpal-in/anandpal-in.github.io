@@ -1,0 +1,6 @@
+{% comment %} Thumbnail for a talk, with a play button when it links to a video. Usage: {% include talk-media.html talk=talk %} {% endcomment %}
+{% assign t = include.talk %}
+{% if t.url %}<a href="{{ t.url }}" class="talk-media" target="_blank" rel="noopener" aria-label="Watch: {{ t.title | escape }}">{% else %}<div class="talk-media">{% endif %}
+    <img src="{{ t.image }}" alt="" loading="lazy">
+    {% if t.url %}<span class="talk-play" aria-hidden="true"></span>{% endif %}
+{% if t.url %}</a>{% else %}</div>{% endif %}

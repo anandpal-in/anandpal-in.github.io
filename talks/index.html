@@ -14,15 +14,18 @@ description: Invited talks, public lectures, and conversations by Dr. Anand Pal 
         {% comment %} Built from _data/talks.yml (newest first). {% endcomment %}
         <div class="talks-list">
             {% for talk in site.data.talks %}
-            <div class="talk-card">
-                <div class="talk-header">
-                    <h3>{% if talk.url %}<a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</h3>
-                    <span class="talk-type">{{ talk.type }}</span>
-                </div>
-                <div class="talk-details">
-                    {% if talk.date != "" %}<p class="talk-date">{{ talk.date }}</p>{% endif %}
-                    <p class="talk-venue">{{ talk.venue }}</p>
-                    {% if talk.url %}<a href="{{ talk.url }}" class="read-more" target="_blank" rel="noopener">Watch →</a>{% endif %}
+            <div class="talk-card{% if talk.image %} has-media{% endif %}">
+                {% if talk.image %}{% include talk-media.html talk=talk %}{% endif %}
+                <div class="talk-body">
+                    <div class="talk-header">
+                        <h3>{% if talk.url %}<a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</h3>
+                        <span class="talk-type">{{ talk.type }}</span>
+                    </div>
+                    <div class="talk-details">
+                        {% if talk.date != "" %}<p class="talk-date">{{ talk.date }}</p>{% endif %}
+                        <p class="talk-venue">{{ talk.venue }}</p>
+                        {% if talk.url %}<a href="{{ talk.url }}" class="read-more" target="_blank" rel="noopener">Watch →</a>{% endif %}
+                    </div>
                 </div>
             </div>
             {% endfor %}

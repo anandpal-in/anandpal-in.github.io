@@ -92,6 +92,7 @@ description: Physicist, educator and public thinker writing on science, technolo
             {% comment %} The three most recent entries in _data/talks.yml. {% endcomment %}
             {% for talk in site.data.talks limit: 3 %}
             <article class="news-card">
+                {% if talk.image %}{% include talk-media.html talk=talk %}{% endif %}
                 <div class="news-date">{{ talk.type }}{% if talk.date != "" %} · {{ talk.date }}{% endif %}</div>
                 <h3>{{ talk.title }}</h3>
                 <p>{{ talk.venue }}</p>
