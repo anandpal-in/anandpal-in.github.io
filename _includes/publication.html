@@ -1,0 +1,7 @@
+{% comment %} One publication entry. Usage: {% include publication.html pub=item %} {% endcomment %}
+{% assign pub = include.pub %}
+<div class="pub-item" data-areas="{{ pub.areas | join: ' ' }}" data-type="{{ pub.type }}">
+    <h4>{% if pub.doi != "" %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
+    <p class="pub-authors">{{ pub.authors | replace: "Anand Pal", "<strong>Anand Pal</strong>" }}</p>
+    <p class="pub-journal"><em>{{ pub.venue }}</em>{% if pub.details != "" %} {{ pub.details }}{% endif %} ({{ pub.year }}){% if pub.doi != "" %} · <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="pub-badge badge-doi">DOI</a>{% endif %}</p>
+</div>

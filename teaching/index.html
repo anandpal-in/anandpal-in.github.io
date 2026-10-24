@@ -1,87 +1,57 @@
 ---
 layout: default
 title: Teaching
-description: Courses, mentorship, and educational philosophy of Dr. Anand Pal
+description: Teaching philosophy, courses, and work with students by Dr. Anand Pal.
 ---
 
 <section class="page-header">
-    <h3>
-        <em>“You cannot teach a man anything; you can only help him find it within himself.” — Galileo Galilei</em>
-    </h3>
-    <!-- <p> Developing scientific understanding, critical inquiry, and interdisciplinary perspectives through physics and
-        emerging technologies </p> -->
+    <h1>Teaching</h1>
+    <p>Physics, quantum science, and the habits of scientific thinking.</p>
 </section>
 
-<section class="content-section" style="padding-top: 0.5rem;">
+<section class="content-section">
     <div class="container">
         <section id="teaching" class="scholarship-section">
-            <p class="section-label">Education &amp; Pedagogy</p>
-            <h2 class="section-heading"><span>🎓</span> Teaching Philosophy</h2>
-
+            <h2 class="section-heading">Teaching Philosophy</h2>
             <div class="teaching-philosophy">
-                <p> For me, teaching is not the passive transmission of information, but the active cultivation of curiosity, disciplined inquiry, and scientific temperament. I believe science education must integrate conceptual rigor with
-                    contemporary relevance. From foundational engineering physics to advanced quantum mechanics and quantum computing,
-                    my approach emphasizes analytical thinking, model-building, and intellectual independence rather than rote learning.
-                </p>
-
-                <p> My goal is to help students ask better questions, think holistically, and develop the confidence to engage meaningfully with emerging technologies and complex global challenges. </p>
-
+                <p>For me, teaching is not the passive transmission of information, but the active cultivation of curiosity, disciplined inquiry, and scientific temperament. I believe science education must integrate conceptual rigor with contemporary relevance. From foundational engineering physics to advanced quantum mechanics and quantum computing, my approach emphasizes analytical thinking, model-building, and intellectual independence rather than rote learning.</p>
+                <p>My goal is to help students ask better questions, think holistically, and develop the confidence to engage meaningfully with emerging technologies and complex global challenges.</p>
             </div>
 
-            <h2 style="margin-bottom: 2rem;">Current Courses (Spring 2026)</h2>
-            <div class="card-grid" style="margin-bottom: 4rem;">
-                <div class="card">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="margin: 0;">PHYS 1002: Applied Engineering Physics</h3>
-                        <span style="background: var(--accent); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Undergraduate</span>
-                    </div>
-                    <p>Introduction to quantum mechanics, lasers, optical fibres, and quantum computing for undergraduate engineering students.</p>
-                    <a href="#" style="color: var(--secondary); font-weight: 500;">Course Syllabus →</a>
-                </div>
-                <div class="card">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="margin: 0;">CMP 7001: Essentials of Condensed Matter Physics</h3>
-                        <span style="background: var(--secondary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Graduate</span>
-                    </div>
-                    <p>Fundamental concepts in condensed matter physics, including crystal structures, lattice dynamics, electronic properties,
-                    magnetism, and the physical principles underlying functional materials.</p>
-                    <a href="#" style="color: var(--secondary); font-weight: 500;">Course Syllabus →</a>
-                </div>
-                <div class="card">
-                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                        <h3 style="margin: 0;">CMP 7002: Computational Methods for Condensed Matter Physics</h3>
-                        <span style="background: var(--secondary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem;">Graduate</span>
-                    </div>
-                    <p>Computational approaches for studying condensed matter systems, including numerical methods, electronic-structure
-                    calculations, density functional theory, and data-driven approaches to materials research.</p>
-                    <a href="#" style="color: var(--secondary); font-weight: 500;">Course Syllabus →</a>
-                </div>
-            </div>
+            {% comment %} Courses come from _data/courses.yml. Add "syllabus: <link>" to a course to show a syllabus link. {% endcomment %}
+            {% assign current_courses = site.data.courses | where: "current", true %}
+            {% assign previous_courses = site.data.courses | where_exp: "c", "c.current != true" %}
 
-            <h2 style="margin-bottom: 2rem;">Previous Courses</h2>
+            <h2 class="teaching-heading">Current Courses</h2>
             <div class="courses-grid">
+                {% for course in current_courses %}
                 <div class="course-card">
-                    <span class="course-level">Undergraduate</span>
-                    <h3>Scientific Thinking &amp; Creativity</h3>
-                    <p>An interdisciplinary course exploring the nature of science, the meaning of scientific knowledge, and how scientific
-                    understanding is developed. The course examines observation, evidence, reasoning, experimentation, uncertainty, and the
-                    role of creativity in scientific inquiry.</p>
-                    <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-lighter);">Fall 2023</p>
+                    <span class="course-level">{{ course.level }}</span>
+                    <h3>{{ course.title }}</h3>
+                    <p>{{ course.description }}</p>
+                    {% if course.syllabus %}<a href="{{ course.syllabus }}" class="read-more">Course Syllabus →</a>{% endif %}
                 </div>
-                <div class="course-card">
-                    <span class="course-level">Undergraduate</span>
-                    <h3>Engineering Physics</h3>
-                    <p>Foundational physics for engineering students covering mechanics, electromagnetism, optics, and modern physics with emphasis on applications.</p>
-                    <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-lighter);">Fall &amp; Spring 2022, 2023</p>
-                </div>
-                <div class="course-card">
-                    <span class="course-level">Graduate</span>
-                    <h3>Advanced Materials Characterization</h3>
-                    <p>Graduate-level course covering XRD, μSR, PPMS, SQUID, and other advanced techniques for characterizing quantum and functional materials.</p>
-                    <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-lighter);">Current</p>
-                </div>
+                {% endfor %}
             </div>
 
+            <h2 class="teaching-heading">Courses Taught</h2>
+            <div class="courses-grid">
+                {% for course in previous_courses %}
+                <div class="course-card">
+                    <span class="course-level">{{ course.level }}</span>
+                    <h3>{{ course.title }}</h3>
+                    <p>{{ course.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="teaching-heading" id="students">Working with Students</h2>
+            <div class="teaching-philosophy">
+                <p>Much of what students need to learn happens beyond formal instruction: by observing how others work, listening to their experiences, and reflecting on their own questions. Working with students has continually reminded me that mentorship is a shared process of learning, grounded in curiosity, trust, and intellectual independence.</p>
+                <p>I supervise doctoral and undergraduate research (see the <a href="/research/#group">research group</a>), serve as faculty advisor to QuantUs, the student quantum computing club, and as counsellor of the IEEE Student Branch at MIT Bengaluru.</p>
+            </div>
+
+            {% comment %}
             <h2 style="margin-bottom: 2rem; margin-top: 4rem;">
                 Teaching Resources
             </h2>
@@ -144,15 +114,10 @@ description: Courses, mentorship, and educational philosophy of Dr. Anand Pal
                     <a href="#" style="color: var(--secondary); font-weight: 500;">
                         View Problem Sets →
                     </a>
-                </div>            
+                </div>
             </div>
+            {% endcomment %}
 
-            <div class="hero-cta" style="display: flex; justify-content: center; gap: 1rem;">
-                <a href="/research/" class="btn-secondary">Research </a>
-                <a href="/publications/" class="btn-secondary">Research Publications</a>
-            </div>
-
-            </div>
         </section>
     </div>
 </section>

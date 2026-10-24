@@ -1,65 +1,82 @@
 ---
 layout: default
 title: Publications
-description: Selected publications by Dr. Anand Pal in quantum materials, superconductivity, and thermoelectrics
+description: Journal articles and conference papers by Dr. Anand Pal in superconductivity, quantum magnetism, and materials for energy.
 ---
 
-<section class="publications-section">
+<section class="page-header">
+    <h1>Publications</h1>
+    <p>Journal articles and conference papers, newest first.</p>
+</section>
+
+<section class="content-section">
     <div class="container">
-        <div class="publication">
-            <section id="publications" class="scholarship-section">
-                <p class="section-label">Scopus / Web of Science Indexed</p>
-                <h2 class="section-heading"><span>📚</span> Selected Publications</h2>
 
-                <div class="pub-metrics">
-                    <div class="pub-metric">
-                        <span class="pub-metric-number">66+</span>
-                        <span class="pub-metric-label">Journal Papers</span>
-                    </div>
-                    <div class="pub-metric">
-                        <span class="pub-metric-number">1,100+</span>
-                        <span class="pub-metric-label">Citations</span>
-                    </div>
-                    <div class="pub-metric">
-                        <span class="pub-metric-number">19</span>
-                        <span class="pub-metric-label">h-index</span>
-                    </div>
-                    <div class="pub-metric">
-                        <span class="pub-metric-number">20+</span>
-                        <span class="pub-metric-label">Conferences</span>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="btn-outline" style="font-size: 0.95rem; padding: 0.75rem 1.5rem;">View Google Scholar →</a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=25226051000" target="_blank" class="btn-outline" style="font-size: 0.95rem; padding: 0.75rem 1.5rem;">View Scopus Profile →</a>
-                </div>
-
-                <div class="pub-filters">
-                    <button class="pub-filter-btn active" data-pub-filter="all">All</button>
-                    <button class="pub-filter-btn" data-pub-filter="quantum-materials">Quantum Materials</button>
-                    <button class="pub-filter-btn" data-pub-filter="thermoelectric">Thermoelectric</button>
-                    <button class="pub-filter-btn" data-pub-filter="superconductivity">Superconductivity</button>
-                </div>
-
-                <div class="publication-list">
-                    {% for item in site.data.publications %}
-                        <div class="pub-item" data-pub-cat="{{ item.categories | join: ' ' }}">
-                            <h4>{{ item.title }}</h4>
-                            <p class="pub-authors">{{ item.authors }}</p>
-                            <p class="pub-journal"><a href="{{ item.doi }}" target="_blank" class="pub-badge badge-doi">{{ item.journal }}</a></p>
-                        </div>
-                    {% endfor %}
-                </div>
-
-                <div class="load-more-wrap">
-                    <a href="/research/" class="btn-secondary">Research </a>
-                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="btn-secondary">
-                        View All Publications on Google Scholar →
-                    </a>
-                    <a href="/teaching/" class="btn-secondary">Teaching &amp; Courses</a>
-                </div>
-            </section>
+        <div class="pub-metrics">
+            {% for m in site.data.profile.metrics %}
+            <div class="pub-metric">
+                <span class="pub-metric-number">{{ m.value }}</span>
+                <span class="pub-metric-label">{{ m.label }}</span>
+            </div>
+            {% endfor %}
         </div>
+
+        <div class="pub-profile-links">
+            <a href="{{ site.data.profile.scholar }}" target="_blank" rel="noopener" class="btn-outline">Google Scholar →</a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId={{ site.data.profile.scopus_id }}" target="_blank" rel="noopener" class="btn-outline">Scopus →</a>
+            <a href="https://orcid.org/{{ site.data.profile.orcid_id }}" target="_blank" rel="noopener" class="btn-outline">ORCID →</a>
+        </div>
+
+        {% comment %} Everything below is built from _data/publications.yml. {% endcomment %}
+        <div class="pub-filters" id="all">
+            <button class="pub-filter-btn active" data-pub-filter="all">All</button>
+            {% for area in site.data.research_areas %}
+            <button class="pub-filter-btn" data-pub-filter="{{ area.key }}">{{ area.title }}</button>
+            {% endfor %}
+            <button class="pub-filter-btn" data-pub-filter="conference">Conference Papers</button>
+        </div>
+
+        {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+        <div id="pubArchive">
+            {% for year in by_year %}
+            <div class="pub-year-group">
+                <h3 class="archive-year">{{ year.name }}</h3>
+                <div class="publication-list">
+                    {% for item in year.items %}{% include publication.html pub=item %}{% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
     </div>
 </section>
+
+<script>
+// Filter the full list by research area or by conference papers; also applied from the URL (e.g. #energy).
+function applyPubFilter(filter) {
+    const btn = document.querySelector('.pub-filter-btn[data-pub-filter="' + filter + '"]');
+    if (!btn) return false;
+    document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.toggle('active', b === btn));
+    document.querySelectorAll('#pubArchive .pub-year-group').forEach(group => {
+        let visible = 0;
+        group.querySelectorAll('.pub-item').forEach(item => {
+            const show = filter === 'all'
+                || (filter === 'conference' ? item.dataset.type === 'conference'
+                                            : item.dataset.areas.split(' ').includes(filter));
+            item.style.display = show ? '' : 'none';
+            if (show) visible++;
+        });
+        group.style.display = visible ? '' : 'none';
+    });
+    return true;
+}
+document.querySelectorAll('.pub-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        applyPubFilter(btn.dataset.pubFilter);
+        history.replaceState(null, '', btn.dataset.pubFilter === 'all' ? location.pathname : '#' + btn.dataset.pubFilter);
+    });
+});
+if (location.hash && applyPubFilter(location.hash.slice(1))) {
+    document.getElementById('all').scrollIntoView();
+}
+</script>

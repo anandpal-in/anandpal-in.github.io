@@ -1,5 +1,4 @@
-```html
-<nav class="nav-container">
+<nav class="nav-container" aria-label="Main">
 
     <div class="nav-content">
 
@@ -7,93 +6,19 @@
             Dr. Anand Pal
         </a>
 
-        <button class="mobile-toggle" aria-label="Toggle menu">
+        <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
             <span></span><span></span><span></span>
         </button>
 
-        <ul class="nav-menu">
-
-            <!-- Home -->
+        {% comment %} Menu items and their order come from _data/navigation.yml. {% endcomment %}
+        <ul class="nav-menu" id="nav-menu">
+            {% for item in site.data.navigation %}
             <li>
-                <a href="{{ '/' | relative_url }}" {% if page.url=='/' %} class="active" {% endif %}>
-                    Home
-                </a>
+                <a href="{{ item.url | relative_url }}"{% if page.url contains item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
             </li>
-
-            <!-- About -->
-            <!-- <li>
-                <a href="{{ '/about/' | relative_url }}" {% if page.url contains 'about' %} class="active" {% endif %}>
-                    About
-                </a>
-            </li> -->
-
-            <!-- Writing -->
-            <li>
-                <a href="{{ '/writing/' | relative_url }}" {% if page.url contains 'writing' %} class="active" {% endif
-                    %}>
-                    Writing
-                </a>
-            </li>
-
-            <!-- Reading -->
-            <li>
-                <a href="{{ '/reading/' | relative_url }}" {% if page.url contains 'reading' %} class="active" {% endif
-                    %}>
-                    Reading
-                </a>
-            </li>
-
-            <!-- Research & Teaching Dropdown -->
-            <li class="dropdown">
-
-                <a href="{{ '/research/' | relative_url }}" {% if page.url contains 'research' or page.url
-                    contains 'publications' or page.url contains 'teaching' %} class="active" {% endif %}>
-                    Academics
-                </a>
-
-                <ul class="dropdown-menu">
-
-                    <li>
-                        <a href="{{ '/research/' | relative_url }}">
-                            Research
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ '/publications/' | relative_url }}">
-                            Publications
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="{{ '/teaching/' | relative_url }}">
-                            Teaching
-                        </a>
-                    </li>
-
-                </ul>
-
-            </li>
-
-            <!-- Leadership & Mentorship -->
-            <li>
-                <a href="{{ '/mentorship/' | relative_url }}" {% if page.url contains 'mentorship' %} class="active" {%
-                    endif %}>
-                    Mentorship
-                </a>
-            </li>
-
-            <!-- Connect -->
-            <li>
-                <a href="{{ '/contact/' | relative_url }}" {% if page.url contains 'contact' %} class="active" {% endif
-                    %}>
-                    Connect
-                </a>
-            </li>
-
+            {% endfor %}
         </ul>
 
     </div>
 
 </nav>
-```

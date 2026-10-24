@@ -1,0 +1,18 @@
+# Contact details, profile links and citation figures, used in the footer, Contact and Publications pages.
+# Update the figures here when Google Scholar changes.
+email: sandhu.anand@hotmail.com
+linkedin: https://www.linkedin.com/in/pal-anand/
+x: https://x.com/anandpal
+scholar: https://scholar.google.com/citations?user=8Blz4qgAAAAJ&hl=en
+orcid_id: 0000-0003-1602-507X
+scopus_id: "25226051000"
+
+metrics:
+  - value: "66+"
+    label: Journal Papers
+  - value: "1,100+"
+    label: Citations
+  - value: "19"
+    label: h-index
+  - value: "20+"
+    label: Conference Presentations

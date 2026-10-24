@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% comment %} Atom feed of articles in _writing/, newest first. Built without plugins. {% endcomment %}
+{% assign articles = site.writing | sort: "date" | reverse %}
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Writing by Dr. Anand Pal</title>
+    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    <link href="{{ '/feed.xml' | absolute_url }}" rel="self"/>
+    <link href="{{ '/writing/' | absolute_url }}"/>
+    <id>{{ '/writing/' | absolute_url }}</id>
+    <updated>{% if articles.size > 0 %}{{ articles.first.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</updated>
+    <author><name>Dr. Anand Pal</name></author>
+    {% for item in articles limit: 20 %}
+    <entry>
+        <title>{{ item.title | xml_escape }}</title>
+        <link href="{{ item.url | absolute_url }}"/>
+        <id>{{ item.url | absolute_url }}</id>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <category term="{{ item.category | xml_escape }}"/>
+        <summary>{{ item.summary | xml_escape }}</summary>
+        <content type="html">{{ item.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>

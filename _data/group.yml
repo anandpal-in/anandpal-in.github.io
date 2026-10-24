@@ -1,0 +1,37 @@
+# Research group, shown on the Research page. role: phd or ug. "since", "photo" and "link" are optional.
+- name: Asha Bhandarkar
+  role: phd
+  since: Feb 2024
+  area: Thermoelectric materials
+  background: "M.Sc. Physics, MAHE, Manipal"
+  photo: /assets/images/Asha.jpg
+  link: https://www.linkedin.com/in/asha-bhandarkar-4a24682a8/
+
+- name: Anusha TT
+  role: phd
+  since: Feb 2025
+  area: Battery materials
+  background: "M.Sc. Computational Chemistry, CUP, Bathinda"
+  photo: /assets/images/Anusha.jpg
+  link: https://www.linkedin.com/in/anusha-t-t-798174308/
+
+- name: Gayathri G S
+  role: phd
+  area: Battery materials
+  background: "M.Sc. Physics, Bangalore University"
+
+- name: Johan S. Daniel
+  role: ug
+  since: Nov 2023
+  area: AI safety and large language models
+  background: "B.Tech., MIT Bengaluru"
+  photo: /assets/images/Johan.jpeg
+  link: https://www.linkedin.com/in/johan-s-daniel/
+
+- name: Aniruddh Pooli
+  role: ug
+  since: May 2025
+  area: Data-driven materials design
+  background: "B.Tech., MIT Bengaluru"
+  photo: /assets/images/Aniruddh.jpeg
+  link: https://www.linkedin.com/in/aniruddh-pooli/
