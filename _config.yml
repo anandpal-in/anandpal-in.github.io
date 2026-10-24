@@ -23,5 +23,6 @@ defaults:
 
 exclude:
   - README.md
+  - EDITING-GUIDE.md
   - CV_Anand-Pal.pdf
   - rough
