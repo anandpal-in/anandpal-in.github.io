@@ -17,7 +17,7 @@
     <meta property="og:image" content="{{ meta_image }}">
     <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
     <link rel="alternate" type="application/atom+xml" title="Writing by Dr. Anand Pal" href="{{ '/feed.xml' | relative_url }}">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v={{ site.time | date: '%s' }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,6 +30,6 @@
 
     {% include footer.html %}
 
-    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script.js?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>
