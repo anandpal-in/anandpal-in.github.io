@@ -61,6 +61,5 @@ The purpose of science is not merely to produce more papers. The purpose of educ
     <ol>
         <li>M. Naddaf, “<a href="https://www.nature.com/articles/d41586-026-03455-8">Record-breaking retraction: scholarly publisher pulls 1,400 conference papers on one day</a>,” <em>Nature</em> (news), 30 October 2026.</li>
         <li>M. Strathern, “‘Improving ratings’: audit in the British University system,” <em>European Review</em> 5, 305–321 (1997). The source of the common phrasing of Goodhart’s law.</li>
-        <li>P. Freire, <em>Pedagogy of the Oppressed</em> (1968). The source of the “banking” concept of education.</li>
     </ol>
 </div>

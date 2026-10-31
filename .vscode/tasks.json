@@ -1,0 +1,63 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve built site locally",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"8000",
+				"--directory",
+				"_site"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Serve Jekyll output (retry)",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"8001",
+				"--bind",
+				"0.0.0.0",
+				"--directory",
+				"D:\\Website\\anandpal-in.github.io\\_site"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Python availability",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"where python"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Serve site using selected Python",
+			"type": "shell",
+			"command": "C:\\Users\\anand.pal.MPL\\AppData\\Local\\anaconda3\\python.exe",
+			"args": [
+				"-u",
+				"-m",
+				"http.server",
+				"8000",
+				"--bind",
+				"0.0.0.0",
+				"--directory",
+				"D:\\Website\\anandpal-in.github.io\\_site"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
