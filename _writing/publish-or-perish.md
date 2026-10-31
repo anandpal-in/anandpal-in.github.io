@@ -5,7 +5,6 @@ date: 2026-10-31
 category: Science Policy
 summary: "IEEE’s record retraction of 1,417 paper-mill papers is a symptom. The deeper loss is educational: when universities measure people by publication counts, they stop forming thinkers and start producing outputs."
 image: /assets/images/writing/publish-or-perish.png
-image_alt: "A student slumped at a desk beside towering stacks of papers labelled h-index, citations, publications and impact factor, while a speaker on stage is introduced by publication count and h-index; a small lamp labelled curiosity flickers out."
 image_credit: "Illustration generated with ChatGPT."
 ---
 
